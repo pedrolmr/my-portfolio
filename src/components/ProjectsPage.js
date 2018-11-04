@@ -1,9 +1,10 @@
 import React from 'react';
+import ProjectList from './ProjectList';
 
-const ProjectsPage = () => {
+const ProjectsPage = (props) => {
     return (
         <div className="home-page">
-            <h1>this is the Projects Page</h1>
+            <ProjectList projects={props.data} />
         </div>
     );
 }

@@ -8,14 +8,35 @@ import AboutPage from './components/AboutPage'
 import ProjectsPage from './components/ProjectsPage'
 import ContactPage from './components/ContactPage'
 
+import projects from './Data';
+
 class App extends Component {
+
+  constructor(){
+    super();
+    this.state = {
+      data: []
+    }
+  }
+  componentDidMount(){
+    this.setState({ data: projects });
+  }
+
   render() {
     return (
       <div className="App">
        <Header />
-        <Route exact path="/" render={props => <HomePage {...props}/>}/>
+        <Route 
+          exact path="/" 
+          render={props => <HomePage {...props} 
+          data={this.state.data}/>}
+        />
         <Route path="/about" render={props => <AboutPage {...props} />} />
-        <Route path="/projects" render={props => <ProjectsPage {...props} />} />
+        <Route 
+          path="/projects" 
+          render={props => <ProjectsPage {...props} 
+          data={this.state.data}/>} 
+        />
         <Route path="/contact" render={props => <ContactPage {...props} />} />
       </div>
     );
