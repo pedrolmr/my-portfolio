@@ -4,9 +4,10 @@ import { Route } from 'react-router-dom';
 
 import Header from './components/Header';
 import HomePage from './components/HomePage';
-import AboutPage from './components/AboutPage'
-import ProjectsPage from './components/ProjectsPage'
-import ContactPage from './components/ContactPage'
+import AboutPage from './components/AboutPage';
+import ProjectsPage from './components/ProjectsPage';
+import ContactPage from './components/ContactPage';
+import Footer from './components/Footer'
 
 import data from './Data';
 
@@ -38,6 +39,7 @@ class App extends Component {
           data={this.state.data}/>} 
         />
         <Route path="/contact" render={props => <ContactPage {...props} />} />
+        <Footer />
       </div>
     );
   }

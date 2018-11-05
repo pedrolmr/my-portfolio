@@ -1,7 +1,8 @@
 .navigation-bar{
   display: flex;
   border:1px solid black;
-  padding: 10px;
+  padding: 10px 0;
+  justify-content: space-between;
 }
 .navigation-bar .logo{
   border:1px solid plum;
@@ -10,15 +11,21 @@
 }
 .navigation-bar nav{
   align-self: center;
+  flex-direction: row;
 }
 .navigation-bar nav a{
   padding:20px 20px;
   border:1px solid black;
 }
 .project-list{
+  display: flex;
   border:3px solid purple;
+  flex-wrap:wrap;
+  justify-content: center;
 }
 .project-card{
+  border:1px solid black;
+  padding:10px;
   width:300px;
 }
 .project-card img{
@@ -40,4 +47,8 @@
   border:3px solid pink;
   padding:10% 0;
   text-align:center;
+}
+.footer{
+  padding: 20px 0;
+  text-align: center;
 }
