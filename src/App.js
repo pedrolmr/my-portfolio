@@ -8,7 +8,7 @@ import AboutPage from './components/AboutPage'
 import ProjectsPage from './components/ProjectsPage'
 import ContactPage from './components/ContactPage'
 
-import projects from './Data';
+import data from './Data';
 
 class App extends Component {
 
@@ -19,7 +19,7 @@ class App extends Component {
     }
   }
   componentDidMount(){
-    this.setState({ data: projects });
+    this.setState({ data: data });
   }
 
   render() {

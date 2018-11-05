@@ -1,8 +1,8 @@
-const projects = [
+const data = [
     {
         title: "Lambda Notes",
         description: "description here please",
         image: "https://i.imgur.com/gEHmSWI.png"
     }
 ]
-export default projects;
+export default data;
