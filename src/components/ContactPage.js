@@ -3,7 +3,11 @@ import React from 'react';
 const ContactPage = () => {
     return (
         <div className="home-page">
-            <h1>this is the Contact Page</h1>
+            <form method="POST" action="https://formspree.io/pedroluismontesinosrivera@gmail.com">
+                <input type="email" name="email" placeholder="Your email"/>
+                <textarea name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     );
 }
