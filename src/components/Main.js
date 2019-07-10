@@ -46,7 +46,9 @@ class Main extends React.Component{
 
                 <ContactSection>
                     <ContactContainer>
-                        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true"
+                            data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="bot-field" />
                             <InputWrapper>
                                 <TwoInputs>
                                     <Input type="name" name="name" placeholder="Name" />
@@ -54,7 +56,7 @@ class Main extends React.Component{
                                 </TwoInputs>
                             </InputWrapper>
                         
-                            <div data-netlify-recaptcha="true"></div>
+                           
                             <Textarea type="message" name="message" placeholder="Message" />
                             <ButtonWrapper>
                                 <Buttons>
