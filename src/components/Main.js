@@ -46,7 +46,7 @@ class Main extends React.Component{
 
                 <ContactSection>
                     <ContactContainer>
-                        <form netlify>
+                        <form name="contact" method="POST" data-netlify="true">
                             <InputWrapper>
                                 <TwoInputs>
                                     <Input type="name" name="name" placeholder="Name" />
