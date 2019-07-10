@@ -148,7 +148,7 @@ const Buttons = styled.div`
     display:flex;
     width:65%;
     justify-content:space-between;
-    
+    gi
 `
 const ProjectSection = styled.div`
     border: 3px solid black;
