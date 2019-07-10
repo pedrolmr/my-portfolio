@@ -60,7 +60,7 @@ class Main extends React.Component{
                             <Textarea type="message" name="message" placeholder="Message" />
                             <ButtonWrapper>
                                 <Buttons>
-                                    <InputButton type="submit" value="Send" />
+                                    <SubmitButton type="submit">Send</SubmitButton>
                                     <ClearButton>Clear</ClearButton>
                                 </Buttons>
                             </ButtonWrapper>
@@ -126,12 +126,12 @@ const Textarea = styled.textarea`
     box-sizing : border-box;
     outline:none;
 `
-const InputButton = styled.input`
+const SubmitButton = styled.button`
     border: 1px solid #d1cfcf;
     border-radius:3px;
     text-align:center;
     padding:15px;
-    width:200px;
+    width:49%;
     font-size:15px;
 `
 const ClearButton = styled.button`
@@ -139,16 +139,18 @@ const ClearButton = styled.button`
     border-radius:3px;
     text-align:center;
     padding:15px;
-    width:200px;
+    width:49%;
     font-size:15px;
 `
 const ButtonWrapper = styled.div`
+    border:1px solid black;
     display:flex;
     justify-content:center;
 `
 const Buttons = styled.div`
+    border:2px solid purple;
     display:flex;
-    width:65%;
+    width:75%;
     justify-content:space-between;
     gi
 `
