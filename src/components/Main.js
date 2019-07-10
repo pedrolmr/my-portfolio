@@ -157,12 +157,12 @@ const ProjectSection = styled.div`
 const BoxSection = styled.div`
     display: flex;
     flex-direction: column;
-    border: 3px solid purple;
+
 
 `
 const BoxLeft = styled.div`
     display:flex;
-    border: 3px solid black;
+    
     flex-direction:column;
     align-self:flex-start;
     width:50%;
@@ -170,7 +170,7 @@ const BoxLeft = styled.div`
 `
 const BoxRight = styled.div`
     display:flex;
-    border: 3px solid black;
+ 
     flex-direction:column;
     align-self:flex-end;
     width:50%;
