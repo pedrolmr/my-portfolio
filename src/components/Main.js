@@ -37,6 +37,15 @@ class Main extends React.Component{
                         </BoxRight>
                     </BoxSection>
                 </ProjectSection>
+
+                <ContactSection>
+                    <form>
+                        <input type="name" name="name" placeholder="Name" />
+                        <input type="email" name="email" placeholder="Email" />
+                        <textarea type="message" name="message" placeholder="Message" />
+                        <input type="submit" value="Submit" />
+                    </form>
+                </ContactSection>
             </div>
         );
     }
@@ -80,13 +89,20 @@ const BoxLeft = styled.div`
     border: 3px solid black;
     flex-direction:column;
     align-self:flex-start;
+    width:50%;
+    height:100%;
 `
 const BoxRight = styled.div`
     display:flex;
     border: 3px solid black;
     flex-direction:column;
     align-self:flex-end;
+    width:50%;
+    height:100%;
 `
-
+const ContactSection = styled.div`
+    border: 3px solid blue;
+    height:50vh;
+`
 
 export default Main;
