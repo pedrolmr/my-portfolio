@@ -46,9 +46,8 @@ class Main extends React.Component{
 
                 <ContactSection>
                     <ContactContainer>
-                        <form name="contact" method="POST" data-netlify="true"
-                            data-netlify-honeypot="bot-field">
-                            <input type="hidden" name="bot-field" />
+                        <form name="contact" method="POST">
+                            <input type="hidden" name="form-name" value="contact"/>
                             <InputWrapper>
                                 <TwoInputs>
                                     <Input type="name" name="name" placeholder="Name" />
