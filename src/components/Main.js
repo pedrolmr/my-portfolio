@@ -27,13 +27,19 @@ class Main extends React.Component{
                         <BoxLeft>
                             <h2>Connect Our Kids</h2>
                             <img src="https://via.placeholder.com/300"/>
-                            <a href="#">View</a>
+                            <View>
+                                <a href="#">View code</a>
+                                <a href="#">View</a>
+                            </View>
                         </BoxLeft>
 
                         <BoxRight>
                             <h2>S&J Architects</h2>
                             <img src="https://via.placeholder.com/300"/>
-                            <a href="#">View</a>
+                            <View>
+                                <a href="#">View code</a>
+                                <a href="#">View</a>
+                            </View>
                         </BoxRight>
                     </BoxSection>
                 </ProjectSection>
@@ -101,6 +107,10 @@ const BoxRight = styled.div`
     height:100%;
 `
 const ContactSection = styled.div`
+    border: 3px solid blue;
+    height:50vh;
+`
+const View = styled.div`
     border: 3px solid blue;
     height:50vh;
 `
