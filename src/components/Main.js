@@ -47,11 +47,21 @@ class Main extends React.Component{
                 <ContactSection>
                     <ContactContainer>
                         <form action="POST" data-netlify="true">
-                            <Input type="name" name="name" placeholder="Name" />
-                            <Input type="email" name="email" placeholder="Email" />
+                            <InputWrapper>
+                                <TwoInputs>
+                                    <Input type="name" name="name" placeholder="Name" />
+                                    <Input type="email" name="email" placeholder="Email" />
+                                </TwoInputs>
+                            </InputWrapper>
+                        
                             <div data-netlify-recaptcha="true"></div>
                             <Textarea type="message" name="message" placeholder="Message" />
-                            <InputButton type="submit" value="Submit" />
+                            <ButtonWrapper>
+                                <Buttons>
+                                    <InputButton type="submit" value="Send" />
+                                    <ClearButton>Clear</ClearButton>
+                                </Buttons>
+                            </ButtonWrapper>
                         </form>
                     </ContactContainer>
                 </ContactSection>
@@ -85,14 +95,60 @@ const AboutSection = styled.div`
     padding:40px;
     margin-top:-45px;
 `
+
 const Input = styled.input`
-    width:100%
+    display:flex;
+    width:49%
+    font-size:15px;
+    padding:15px;
+    box-sizing : border-box;
+    outline:none;
+
+`
+const TwoInputs = styled.div`
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+`
+const InputWrapper = styled.div`
+    display:flex;
+    justify-content:center;
+    margin-bottom:10px;
+
 `
 const Textarea = styled.textarea`
     width:100%
+    height:200px;
+    font-size:15px;
+    padding:15px;
+    box-sizing : border-box;
+    outline:none;
 `
 const InputButton = styled.input`
-    border: 3px solid blue;
+    border: 1px solid #d1cfcf;
+    border-radius:3px;
+    text-align:center;
+    padding:15px;
+    width:200px;
+    font-size:15px;
+`
+const ClearButton = styled.button`
+    border: 1px solid #d1cfcf;
+    border-radius:3px;
+    text-align:center;
+    padding:15px;
+    width:200px;
+    font-size:15px;
+`
+const ButtonWrapper = styled.div`
+    display:flex;
+    justify-content:center;
+`
+const Buttons = styled.div`
+    display:flex;
+    width:65%;
+    justify-content:space-between;
+    
 `
 const ProjectSection = styled.div`
     border: 3px solid black;
@@ -122,13 +178,12 @@ const BoxRight = styled.div`
 `
 const ContactSection = styled.div`
     display:flex;
-    border: 3px solid blue;
     justify-content:center;
 
 `
 const ContactContainer = styled.div`
-    border: 3px solid purple;
     width:50%;
+    justify-content: space-between;
 `
 const View = styled.div`
     display:flex;
