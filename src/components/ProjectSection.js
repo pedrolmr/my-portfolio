@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ProjectSection = () => {
     return (
-        <Projects>
+        <Projects id="ProjectSection">
             <h1>Projects</h1>
             <BoxSection>
                 <BoxLeft>

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const TopHeader = () => {
     return (
-        <Header>
+        <Header id="TopHeader">
             <TopHeaderDiv>
                 <h1>Pedro Montesinos</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>

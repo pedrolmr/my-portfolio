@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const ContactSection = () => {
     return (
-        <Contact>
+        <Contact id="Contact">
             <ContactContainer>
                 <form name="contact" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
