@@ -8,6 +8,12 @@ class Main extends React.Component{
     render(){
         return(
             <Container>
+                <NavBar>
+                    <NavLink href="#">HOME</NavLink>
+                    <NavLink href="#">ABOUT</NavLink>
+                    <NavLink href="#">PROJECTS</NavLink>
+                    <NavLink href="#">CONTACT</NavLink>
+                </NavBar>
                 <TopHeader>
                     <TopHeaderDiv>
                         <h1>Pedro Montesinos</h1>
@@ -20,6 +26,7 @@ class Main extends React.Component{
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
                 </AboutSection>
+
                 <BodyContainer>
                     <ProjectSection>
                         <h1>Projects</h1>
@@ -88,6 +95,18 @@ class Main extends React.Component{
 const Container = styled.div`
     border: 5px solid purple;
 
+`
+const NavBar = styled.div`
+    display:flex;
+    border:2px solid black;
+    justify-content:center;
+
+`
+const NavLink = styled.a`
+    padding:10px;
+    border:1px solid black;
+    text-decoration:none;
+    color:#000;
 `
 const TopHeader = styled.div`
     background: #614385;  /* fallback for old browsers */
