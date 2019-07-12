@@ -18,8 +18,8 @@ const NavBar = styled.div`
     justify-content:center;
     position:fixed;
     overflow:hidden;
-    top:0;
     z-index:1;
+    background-color:#516395;
     a{
         padding:10px;
         text-decoration:none;
