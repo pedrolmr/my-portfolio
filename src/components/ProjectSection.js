@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import iphone1 from '../images/connectourkids_mockup1.png'
+// import iphone2 from '../images/connectourkids_mockup2.png'
+import browser from '../images/Web-Browser-Mockup.png'
+
+
 const ProjectSection = () => {
     return (
         <Projects id="ProjectSection">
@@ -8,7 +13,8 @@ const ProjectSection = () => {
             <BoxSection>
                 <BoxLeft>
                     <Image>
-                        <img src="https://via.placeholder.com/300" />
+                        <img src={iphone1} alt="iphone image" width="50%"/>
+                        
                     </Image>
                     <View>
                         <h2>Connect Our Kids</h2>
@@ -30,7 +36,7 @@ const ProjectSection = () => {
                         </ProjectButtons>
                     </View>
                     <Image>
-                        <img src="https://via.placeholder.com/300" />
+                        <img src={browser} alt="web browser image" width="100%"/>
                     </Image>
                 </BoxRight>
             </BoxSection>
@@ -47,7 +53,15 @@ const BoxSection = styled.div`
     flex-direction: column;
 `
 const Image = styled.div`
+    display:flex;
     border:3px solid purple;
+    justify-content:space-around;
+    align-items:center;
+    width:50%;
+
+    img{
+        border:1px solid black;
+    }
 
 `
 const BoxLeft = styled.div`
@@ -67,10 +81,11 @@ const BoxRight = styled.div`
     height:100%;
 `
 const View = styled.div`
-    border:3px solid red;
+    width:50%;
     display:flex;
     padding:3%;
     flex-direction: column
+    justify-content:center;
 `
 const ProjectButtons = styled.div`
     display flex;

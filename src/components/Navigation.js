@@ -14,21 +14,17 @@ const Navigation = () => {
 
 const NavBar = styled.div`
     display:flex;
-    border:2px solid black;
+    width:100%;
     justify-content:center;
-
+    position:fixed;
+    overflow:hidden;
+    top:0;
+    z-index:1;
     a{
         padding:10px;
-        border:1px solid black;
         text-decoration:none;
-        color:#000;
+        color:#fff;
     }
 
 `
-// const NavLink = styled.a`
-//     padding:10px;
-//     border:1px solid black;
-//     text-decoration:none;
-//     color:#000;
-// `
 export default Navigation;
