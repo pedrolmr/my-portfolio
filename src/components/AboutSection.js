@@ -35,7 +35,7 @@ const AboutWrapper = styled.div`
 `
 const Image = styled.div`
     display:flex;
-    justify-content:space-around;
+    justify-content:center;
     align-items:center;
     width:50%;
 
@@ -43,9 +43,9 @@ const Image = styled.div`
 const View = styled.div`
     width:50%;
     display:flex;
-    padding:3%;
-    flex-direction: column
-    justify-content:center;
+    flex-direction: column;
+    align-self:flex-end;
+    
 
 `
 export default AboutSection;
