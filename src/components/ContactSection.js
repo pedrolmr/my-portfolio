@@ -30,9 +30,7 @@ const ContactSection = () => {
 const Contact = styled.div`
     display:flex;
     justify-content:center;
-    width:50%;
-    border:3px solid blue;
-
+    width:100%;
 `
 const ContactContainer = styled.div`
     width:50%;
@@ -41,7 +39,7 @@ const ContactContainer = styled.div`
 const InputWrapper = styled.div`
     display:flex;
     justify-content:center;
-    margin-bottom:10px;
+    margin-bottom:20px;
 
 `
 const TwoInputs = styled.div`
@@ -57,6 +55,8 @@ const Input = styled.input`
     padding:10px;
     box-sizing : border-box;
     outline:none;
+    border-radius:5px;
+    border:1px solid #dbdbdb
 
 `
 const Textarea = styled.textarea`
@@ -66,18 +66,18 @@ const Textarea = styled.textarea`
     padding:15px;
     box-sizing : border-box;
     outline:none;
+    margin-bottom:20px;
+    border-radius:5px;
+    border:1px solid #dbdbdb
 `
 const ButtonWrapper = styled.div`
-    border:1px solid black;
     display:flex;
     justify-content:center;
 `
 const Buttons = styled.div`
-    border:2px solid purple;
     display:flex;
     width:75%;
     justify-content:space-between;
-    gi
 `
 
 const SubmitButton = styled.button`

@@ -34,22 +34,22 @@ class Main extends React.Component{
     }
 }
 const Container = styled.div`
-    border: 5px solid purple;
 
 `
 const BodyContainer = styled.div`
-    border:5px solid red;
     display:flex;
     flex-direction:column;
     align-items:center;
 `
 const Footer = styled.div`
     display:flex;
-    border: 1px solid #000;
     height:60px;
     justify-content:center;
     align-items:center;
     margin-top:10px;
+    background-color:#516395;
+    color:#6b7eb3;
+    margin-top:40px;
 `
 
 export default Main;

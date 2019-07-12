@@ -18,7 +18,7 @@ const ProjectSection = () => {
                     </Image>
                     <View>
                         <h2>Connect Our Kids</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
+                        <p>Connect Our Kids is an App built with React Native to help kids in foster homes find families. This tool will help social workers quickly place foster kids into permanent homes using family tree finding (similar to Ancestry.com), case file management and data integrations (similar to Facebook).</p>
                         <ProjectButtons>
                             <LeftViewLink href="#">View code</LeftViewLink>
                             <RightViewLink href="#">View</RightViewLink>
@@ -29,7 +29,7 @@ const ProjectSection = () => {
                 <BoxRight>
                     <View>
                         <h2>S&J Architects</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
+                        <p>Smith and Jones Architects is a fully-responsive, multi-page marketing website that I built to showcase the skills I learned during my first month in Lambda School. The tech used is: HTML, CSS (Less), and JavaScript.</p>
                         <ProjectButtons>
                             <LeftViewLink href="#">View code</LeftViewLink>
                             <RightViewLink href="#">View</RightViewLink>
@@ -46,7 +46,6 @@ const ProjectSection = () => {
 const Projects = styled.div`
     width:50%;
     padding:40px;
-    border:3px solid red;
 `
 const BoxSection = styled.div`
     display: flex;
@@ -54,26 +53,17 @@ const BoxSection = styled.div`
 `
 const Image = styled.div`
     display:flex;
-    border:3px solid purple;
     justify-content:space-around;
     align-items:center;
     width:50%;
 
-    img{
-        border:1px solid black;
-    }
-
 `
 const BoxLeft = styled.div`
-    border:3px solid black;
     display:flex;
-  
     align-self:flex-start;
-
     height:100%;
 `
 const BoxRight = styled.div`
-    border:3px solid black;
     display:flex;
    
     align-self:flex-end;
