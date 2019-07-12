@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const ContactSection = () => {
     return (
         <Contact id="Contact">
+            <h1>Contact</h1>
             <ContactContainer>
                 <form name="contact" method="POST">
                     <input type="hidden" name="form-name" value="contact" />
@@ -29,8 +30,12 @@ const ContactSection = () => {
 }
 const Contact = styled.div`
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
     width:100%;
+    h1{
+        text-align:center;
+    }
 `
 const ContactContainer = styled.div`
     width:50%;
@@ -40,7 +45,6 @@ const InputWrapper = styled.div`
     display:flex;
     justify-content:center;
     margin-bottom:20px;
-
 `
 const TwoInputs = styled.div`
     display:flex;

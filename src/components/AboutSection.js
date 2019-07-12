@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
     return(
         <About id="About">
+            <h1>About</h1>
             <AboutWrapper>
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas scelerisque lectus a hendrerit molestie. Morbi laoreet placerat magna, eget pulvinar lectus.</p>
+                <Image>
+                    <img src={bitmoji} alt="bitmoji image" width="50%" />
+                </Image>
+                <View>
+                    <p>I'm a software developer with a passion for web development. My primary focus is JavaScript but I've worked with multiple programming languages including Python and C. You can take a look at the Projects section to see my work.</p>
+                </View>
             </AboutWrapper>
         </About>
     )
@@ -16,14 +21,31 @@ const About = styled.div`
     display:flex;
     color: #000;
     padding:5%;
-    margin-top:-45px;
-    justify-content:center;
-
+    margin:0;
+    padding:0;
+    flex-direction:column;
+    align-items:center;
     h1{
         text-align:center;
     }
 `
 const AboutWrapper = styled.div`
+    display:flex;
     width:50%;
+`
+const Image = styled.div`
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:50%;
+
+`
+const View = styled.div`
+    width:50%;
+    display:flex;
+    padding:3%;
+    flex-direction: column
+    justify-content:center;
+
 `
 export default AboutSection;

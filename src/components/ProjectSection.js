@@ -14,7 +14,6 @@ const ProjectSection = () => {
                 <BoxLeft>
                     <Image>
                         <img src={iphone1} alt="iphone image" width="50%"/>
-                        
                     </Image>
                     <View>
                         <h2>Connect Our Kids</h2>
@@ -46,6 +45,10 @@ const ProjectSection = () => {
 const Projects = styled.div`
     width:50%;
     padding:40px;
+
+    h1{
+        text-align:center;
+    }
 `
 const BoxSection = styled.div`
     display: flex;
@@ -56,7 +59,6 @@ const Image = styled.div`
     justify-content:space-around;
     align-items:center;
     width:50%;
-
 `
 const BoxLeft = styled.div`
     display:flex;
@@ -65,9 +67,7 @@ const BoxLeft = styled.div`
 `
 const BoxRight = styled.div`
     display:flex;
-   
     align-self:flex-end;
-
     height:100%;
 `
 const View = styled.div`
@@ -79,7 +79,6 @@ const View = styled.div`
 `
 const ProjectButtons = styled.div`
     display flex;
-    border:1px solid black;
 `
 const LeftViewLink = styled.a`
     border:1px solid grey;
