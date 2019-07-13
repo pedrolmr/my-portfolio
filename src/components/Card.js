@@ -9,7 +9,7 @@ const Card = (props) => {
         <CardSection>
             <ProjectCard>
                 <Image className={props.odd ? styles.odd : null}>
-                    <img src={props.card.image} alt="project image" />
+                    <img src={props.card.image} alt="project image" width={props.odd ? '100%' : '50%'}/>
                 </Image>
                 <View>
                     <h2>{props.card.title}</h2>
@@ -34,27 +34,26 @@ const Image = styled.div`
     justify-content:space-around;
     align-items:center;
     width:50%;
-    border:3px solid purple;
 
     img{
-        width:50%;
-        border:3px solid red;
+        height:auto;
     }
+
 `
 const ProjectCard = styled.div`
     display:flex;
     height:100%;
 `
 const View = styled.div`
-    border:3px solid black;
+
     display:flex;
+    padding:3%;
     width:50%;
     flex-direction: column
     justify-content:center;
 `
 const ProjectButtons = styled.div`
     display flex;
-
     a{
         border:1px solid grey;
         display:flex;
