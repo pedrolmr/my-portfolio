@@ -6,13 +6,7 @@ import styles from '../App.css'
 const Card = (props) => {
     console.log(props.odd)
     console.log(props.card.tech.length)
-    const tech = () => {
-        for (let i = 0; i < props.card.tech.length; i++){
-            if(props.card.tech[i] === "redux"){
-                return "R"
-            }
-        }
-    }
+
     return(
         <CardSection>
             <ProjectCard>
@@ -23,7 +17,6 @@ const Card = (props) => {
                     <h2>{props.card.title}</h2>
                     <p>{props.card.description}</p>
 
-                    <p>Tech: {tech()}</p>
                     <ProjectButtons>
                         <a href="#">View code</a>
                         <a href="#">View</a>
@@ -53,16 +46,23 @@ const Image = styled.div`
 const ProjectCard = styled.div`
     display:flex;
     height:100%;
+    @media(max-width: 500px){
+        flex-direction:column;
+        align-items:center;
+    }
 `
 const View = styled.div`
     display:flex;
     padding:3%;
     width:50%;
-    flex-direction: column
+    flex-direction: column;
     justify-content:center;
+    @media(max-width: 500px){
+        width:100%;
+    }
 `
 const ProjectButtons = styled.div`
-    display flex;
+    display: flex;
     a{
         border:1px solid grey;
         display:flex;

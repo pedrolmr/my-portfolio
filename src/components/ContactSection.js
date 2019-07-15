@@ -40,6 +40,11 @@ const Contact = styled.div`
 const ContactContainer = styled.div`
     width:50%;
     justify-content: space-between;
+
+    @media (max-width: 500px){
+        width:100%;
+    }
+
 `
 const InputWrapper = styled.div`
     display:flex;
