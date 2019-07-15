@@ -58,25 +58,25 @@ const TwoInputs = styled.div`
 
     input{
         display:flex;
-        width:49%
+        width:49%;
         font-size:15px;
         padding:10px;
-        box-sizing : border-box;
+        box-sizing: border-box;
         outline:none;
         border-radius:5px;
-        border:1px solid #dbdbdb
+        border:1px solid #dbdbdb;
     }
 `
 const Textarea = styled.textarea`
-    width:100%
+    width:100%;
     height:200px;
     font-size:15px;
     padding:15px;
-    box-sizing : border-box;
+    box-sizing: border-box;
     outline:none;
     margin-bottom:20px;
     border-radius:5px;
-    border:1px solid #dbdbdb
+    border:1px solid #dbdbdb;
 `
 const ButtonWrapper = styled.div`
     display:flex;
