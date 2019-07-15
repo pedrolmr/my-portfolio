@@ -37,7 +37,9 @@ const About = styled.div`
 `
 const AboutWrapper = styled.div`
     display:flex;
-    width:50%;
+    border-bottom: 1px solid #ededed;
+    width:80%;
+    padding-bottom:5%;
 `
 const Image = styled.div`
     display:flex;
@@ -50,7 +52,7 @@ const View = styled.div`
     width:50%;
     display:flex;
     flex-direction: column;
-    align-self:flex-end;
+    justify-content:center;
 `
 const Icons = styled.div`
     display:flex;

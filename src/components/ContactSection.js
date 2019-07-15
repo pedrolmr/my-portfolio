@@ -52,7 +52,7 @@ const TwoInputs = styled.div`
     justify-content:space-between;
 
     input{
-            display:flex;
+        display:flex;
         width:49%
         font-size:15px;
         padding:10px;

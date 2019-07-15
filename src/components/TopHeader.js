@@ -16,12 +16,12 @@ const Header = styled.div`
     background: linear-gradient(to top, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     padding:5%;
-    background-size: cover;
-    background-position: top;
+    
+  
     text-align:center;
     -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
-    height:30vh;
+    height:50vh;
 `
 const TopHeaderDiv = styled.div`
     color:#fff;
