@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { device } from './breakpoints'
 
 import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
@@ -26,33 +27,44 @@ const AboutSection = () => {
 const About = styled.div`
     display:flex;
     color: #000;
-    padding:5%;
+    padding:50px;
     margin:0;
-    padding:0;
     flex-direction:column;
     align-items:center;
     h1{
         text-align:center;
     }
+
+
 `
 const AboutWrapper = styled.div`
     display:flex;
     border-bottom: 1px solid #ededed;
     width:80%;
-    padding-bottom:5%;
+
+    @media(max-width:500px){
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    }
 `
 const Image = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
     width:50%;
-
+    @media(max-width:500px){
+        width:100%;
+    }
 `
 const View = styled.div`
     width:50%;
     display:flex;
     flex-direction: column;
     justify-content:center;
+    @media(max-width:500px){
+        width:100%;
+    }
 `
 const Icons = styled.div`
     display:flex;
