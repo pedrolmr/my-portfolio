@@ -9,13 +9,24 @@ class ContactSection extends Component{
             message: ''
         }
     }
-    inputHandler = event => {
+    inputHandler = e => {
         this.setState({
             input: {
                 ...this.state.input,
-                [event.target.name]: event.target.value
+                [e.target.name]: e.target.value
             }
         });
+    }
+
+    clearFields = (e) => {
+        e.preventDefault();
+        this.setState({
+            input: {
+                name: '',
+                email: '',
+                message: ''
+            }
+        })
     }
     render(){
         return (
@@ -37,23 +48,28 @@ class ContactSection extends Component{
                                 <input 
                                     type="email" 
                                     name="email" 
-                                    value={this.state.email}
-                                    onChange={value => this.inputHandler('email', value)}
+                                    value={this.state.input.email}
+                                    onChange={this.inputHandler} 
                                     placeholder="Email" 
                                 />
                             </TwoInputs>
                         </InputWrapper>
 
 
-                        <Textarea type="message" name="message" placeholder="Message" />
+                        <Textarea 
+                            type="message" 
+                            name="message" 
+                            value={this.state.input.message}
+                            onChange={this.inputHandler} 
+                            placeholder="Message" 
+                        />
                         <ButtonWrapper>
                             <Buttons>
                                 <button type="submit">Send</button>
-                                <button>Clear</button>
+                                <button onClick={this.clearFields}>Clear</button>
                             </Buttons>
                         </ButtonWrapper>
                     </form>
-                    <p>{this.state.name}</p>
                 </ContactContainer>
             </Contact>
         )
