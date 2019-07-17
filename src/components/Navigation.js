@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const Navigation = () => {
     return (
         <NavBar>
@@ -25,6 +24,9 @@ const NavBar = styled.div`
         padding:10px;
         text-decoration:none;
         color:#fff;
+    }
+    @media (max-width:500px){
+        display:hidden;
     }
 
 `

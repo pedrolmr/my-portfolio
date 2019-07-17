@@ -21,6 +21,8 @@ class ProjectSection extends Component {
                 description: 'Smith and Jones Architects is a fully-responsive, multi-page marketing website that I built to showcase the skills I learned during my first month in Lambda School. The tech used is: HTML, CSS (Less), and JavaScript.',
                 tech: ['HTML', 'Less', 'JavaScript']
             },
+
+            
             
         ]
     }

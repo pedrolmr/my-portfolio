@@ -1,32 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const ContactSection = () => {
-    return (
-        <Contact id="Contact">
-            <h1>Contact</h1>
-            <ContactContainer>
-                <form name="contact" method="POST">
-                    <input type="hidden" name="form-name" value="contact" />
-                    <InputWrapper>
-                        <TwoInputs>
-                            <input type="name" name="name" placeholder="Name" />
-                            <input type="email" name="email" placeholder="Email" />
-                        </TwoInputs>
-                    </InputWrapper>
+class ContactSection extends Component{
+    state = {
+        input:{
+            name: '',
+            email: '',
+            message: ''
+        }
+    }
+    inputHandler = event => {
+        this.setState({
+            input: {
+                ...this.state.input,
+                [event.target.name]: event.target.value
+            }
+        });
+    }
+    render(){
+        return (
+            <Contact id="Contact">
+                <h1>Contact</h1>
+                <ContactContainer>
+                    <form name="contact" method="POST">
+                        <input type="hidden" name="form-name" value="contact" />
+                        <InputWrapper>
+                            <TwoInputs>
+                                <input 
+                                    type="name" 
+                                    name="name"
+                                    value={this.state.input.name}
+                                    onChange={this.inputHandler} 
+                                    placeholder="Name" 
+                                />
+
+                                <input 
+                                    type="email" 
+                                    name="email" 
+                                    value={this.state.email}
+                                    onChange={value => this.inputHandler('email', value)}
+                                    placeholder="Email" 
+                                />
+                            </TwoInputs>
+                        </InputWrapper>
 
 
-                    <Textarea type="message" name="message" placeholder="Message" />
-                    <ButtonWrapper>
-                        <Buttons>
-                            <button type="submit">Send</button>
-                            <button>Clear</button>
-                        </Buttons>
-                    </ButtonWrapper>
-                </form>
-            </ContactContainer>
-        </Contact>
-    )
+                        <Textarea type="message" name="message" placeholder="Message" />
+                        <ButtonWrapper>
+                            <Buttons>
+                                <button type="submit">Send</button>
+                                <button>Clear</button>
+                            </Buttons>
+                        </ButtonWrapper>
+                    </form>
+                    <p>{this.state.name}</p>
+                </ContactContainer>
+            </Contact>
+        )
+    }
 }
 const Contact = styled.div`
     display:flex;

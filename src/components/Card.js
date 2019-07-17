@@ -37,7 +37,7 @@ const Image = styled.div`
     justify-content:space-around;
     align-items:center;
     width:50%;
-
+    border:2px solid black;
     img{
         height:auto;
     }
@@ -52,6 +52,7 @@ const ProjectCard = styled.div`
     }
 `
 const View = styled.div`
+    border:2px solid blue;
     display:flex;
     padding:3%;
     width:50%;

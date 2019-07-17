@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const TopHeader = () => {
     return (
         <Header id="TopHeader">
             <TopHeaderDiv>
                 <h1>Pedro Montesinos</h1>
+                <FontAwesomeIcon icon="fas fa-sort-down" fixedWidth size="2x" />
+            
             </TopHeaderDiv>
         </Header>
     )
