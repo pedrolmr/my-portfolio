@@ -17,7 +17,7 @@ class ContactSection extends Component{
             }
         });
     }
-
+    
     clearFields = (e) => {
         e.preventDefault();
         this.setState({
