@@ -58,6 +58,10 @@ const View = styled.div`
     justify-content:center;
     @media(max-width: 500px){
         width:100%;
+        order: 2;
+        h2{
+            text-align:center;
+        }
     }
 `
 const ProjectButtons = styled.div`

@@ -5,7 +5,6 @@ class Navigation extends Component {
     render(){
         return (
             <div>
-            <button onClick={this.navDisplay}>display menu</button>
             <NavBar>
                 <a href="#TopHeader">HOME</a>
                 <a href="#About">ABOUT</a>

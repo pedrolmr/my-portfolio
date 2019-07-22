@@ -76,12 +76,17 @@ class ContactSection extends Component{
     }
 }
 const Contact = styled.div`
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
-    width:100%;
     h1{
         text-align:center;
+    }
+    @media (max-width: 500px){
+        width:100%;
+        padding:30px;
+        box-sizing: border-box;
     }
 `
 const ContactContainer = styled.div`
