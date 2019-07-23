@@ -8,11 +8,7 @@ const TopHeader = () => {
             <TopHeaderDiv>
                 <h1>Pedro Montesinos</h1>
                 <p>FullStack Developer</p>
-
-            <Icons>
-                <a href="#About"><FontAwesomeIcon icon="angle-double-down" fixedWidth size="3x"/></a>  
-            </Icons>
-                
+            <a href="#About"><FontAwesomeIcon icon="angle-double-down" fixedWidth size="3x"/></a>  
             </TopHeaderDiv>
         </Header>
     )
@@ -31,9 +27,13 @@ const Header = styled.div`
     height:50vh;
 `
 const TopHeaderDiv = styled.div`
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+height:100%;
     color:#fff;
     width:50%;
-
     h1{
         font-size:3rem;
         @media(max-width:500px){
@@ -44,15 +44,10 @@ const TopHeaderDiv = styled.div`
     p{
         font-size:1.5rem;
     }
-`
-const Icons = styled.div`
-    display:flex;
-    justify-content:center;
-
     a{
         color:#fff;
     }
-
 `
+
 
 export default TopHeader;
