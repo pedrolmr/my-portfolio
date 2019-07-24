@@ -33,7 +33,7 @@ class ContactSection extends Component{
             <Contact id="Contact">
                 <h1>Contact</h1>
                 <ContactContainer>
-                    <form action="/success/" name="contact" method="POST">
+                    <form action="/success" name="contact" method="POST">
                         <input type="hidden" name="form-name" value="contact" />
                         <InputWrapper>
                             <TwoInputs>
