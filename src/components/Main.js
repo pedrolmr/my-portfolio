@@ -8,24 +8,16 @@ import ProjectSection from './ProjectSection';
 import ContactSection from './ContactSection'
 
 class Main extends React.Component{
-    static defaultProps = {
-        title: 'this is the homepage'
-    }
     render(){
         return(
             <Container>
                 <Navigation />
-
                 <TopHeader />
-
                 <AboutSection />
-
                 <BodyContainer>
                     <ProjectSection />
-
                     <ContactSection />
                 </BodyContainer>
-
                 <Footer>
                     <p>&copy;Pedro Montesinos 2019</p>
                 </Footer>
