@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { screen } from './globals/MediaQueries'
+
 const TopHeader = () => {
     return (
         <Header id="TopHeader">
@@ -25,21 +27,28 @@ const Header = styled.div`
     -webkit-clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
     height:50vh;
+    padding-top:44px;
 `
 const TopHeaderDiv = styled.div`
 display:flex;
 flex-direction:column;
 align-items:center;
 justify-content:center;
-height:100%;
-@media(max-width:360px){
+margin:0;
+padding:0;
+border:2px solid purple;
+${screen.phoneS`
+    border: 3px solid purple
+`}
+/* @media(max-width:360px){
     border:1px solid black;
     margin-top:44px;
-}
+} */
     color:#fff;
-    width:50%;
+    
     h1{
         font-size:3rem;
+        border:1px solid black;
         @media(max-width:768px){
             border:1px solid black;
             line-height:1em;
@@ -51,6 +60,7 @@ height:100%;
 
     p{
         font-size:1.5rem;
+        border:1px solid black;
          @media(max-width:768px){
             border:1px solid black;
         }

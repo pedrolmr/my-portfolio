@@ -10,8 +10,9 @@ import ContactSection from './ContactSection'
 class Main extends React.Component{
     render(){
         return(
+            
             <Container>
-                <Navigation />
+            <Navigation />
                 <TopHeader />
                 <AboutSection />
                 <BodyContainer>
@@ -22,6 +23,7 @@ class Main extends React.Component{
                     <p>&copy;Pedro Montesinos 2019</p>
                 </Footer>
             </Container>
+        
         );
     }
 }
