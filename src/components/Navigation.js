@@ -25,7 +25,6 @@ const NavBar = styled.div`
     position:fixed;
     overflow:hidden;
     z-index:1;
-    opacity:0.2;
     background-color:#516395;
 
     a{

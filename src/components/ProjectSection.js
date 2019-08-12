@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import Card from './Card';
+import Wrapper from './Wrapper';
 
 import iphone1 from '../images/connectourkids_mockup1.png'
 import browser from '../images/Web-Browser-Mockup.png'
@@ -28,20 +29,20 @@ class ProjectSection extends Component {
     }
     render(){
         return (
-            <Projects id="ProjectSection">
-                <h1>Projects</h1>
-                {this.props.data.map((card, i) => <Card odd={i % 2} card={card}/>)}
-            </Projects>
+            // <Projects id="ProjectSection">
+            <Wrapper title="Projects">
+                {this.props.data.map((card, i) => <Card isOdd={i % 2} card={card}/>)}
+            </Wrapper>
         )
     }
 }
-const Projects = styled.div`
-    width:80%;
-    padding:40px;
-    border-bottom: 1px solid #ededed;
-    h1{
-        text-align:center;
-    }
-`
+// const Projects = styled.div`
+//     width:80%;
+//     padding:40px;
+//     border-bottom: 1px solid #ededed;
+//     h1{
+//         text-align:center;
+//     }
+// `
 
 export default ProjectSection;

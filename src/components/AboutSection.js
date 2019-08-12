@@ -3,12 +3,14 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { device } from './breakpoints'
 
+import Wrapper from './Wrapper'
+
 import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
     return(
-        <About id="About">
-            <h1>About</h1>
-            <AboutWrapper>
+        // <About id="About">
+        <Wrapper id="About" title="About" direction="column" midHeight align="center">
+           <AboutWrapper>
                 <Image>
                     <img src={bitmoji} alt="bitmoji image" width="50%" />
                 </Image>
@@ -21,25 +23,11 @@ const AboutSection = () => {
                     </Icons>
                 </View>
             </AboutWrapper>
-        </About>
+        </Wrapper>
     )
 }
-const About = styled.div`
-    display:flex;
-    color: #000;
-    padding:50px;
-    margin:0;
-    flex-direction:column;
-    align-items:center;
-    h1{
-        text-align:center;
-    }
-`
 const AboutWrapper = styled.div`
     display:flex;
-    border-bottom: 1px solid #ededed;
-    width:80%;
-
     @media(max-width:500px){
         flex-direction:column;
         align-items:center;
@@ -51,6 +39,7 @@ const Image = styled.div`
     justify-content:center;
     align-items:center;
     width:50%;
+    box-sizing:border-box;
     @media(max-width:500px){
         width:100%;
     }

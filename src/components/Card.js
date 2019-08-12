@@ -4,14 +4,11 @@ import styled from 'styled-components';
 import styles from '../App.css'
 
 const Card = (props) => {
-    console.log(props.odd)
-    console.log(props.card.tech.length)
-
     return(
         <CardSection>
             <ProjectCard>
-                <Image className={props.odd ? styles.odd : null}>
-                    <img src={props.card.image} alt="project image" width={props.odd ? '100%' : '50%'}/>
+                <Image className={props.isOdd ? styles.isOdd : null}>
+                    <img src={props.card.image} alt="project image" width={props.isOdd ? '100%' : '50%'}/>
                 </Image>
                 <View>
                     <h2>{props.card.title}</h2>
@@ -56,10 +53,17 @@ const View = styled.div`
     width:50%;
     flex-direction: column;
     justify-content:center;
+    h2{
+        font-size:1.2rem;
+        font-weight:bold;
+        text-align:center;
+    }
     @media(max-width: 500px){
         width:100%;
         order: 2;
         h2{
+            font-size:1.5rem;
+            font-weight:bold;
             text-align:center;
         }
     }

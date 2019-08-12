@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import Wrapper from './Wrapper';
+
 class ContactSection extends Component{
     state = {
         input:{
@@ -30,8 +32,8 @@ class ContactSection extends Component{
     }
     render(){
         return (
-            <Contact id="Contact">
-                <h1>Contact</h1>
+            // <Contact id="Contact">
+            <Wrapper title="Contact" direction="column" width="100%">
                 <ContactContainer>
                     <form name="contact" method="POST">
                         <input type="hidden" name="form-name" value="contact" />
@@ -71,7 +73,9 @@ class ContactSection extends Component{
                         </ButtonWrapper>
                     </form>
                 </ContactContainer>
-            </Contact>
+
+            </Wrapper>
+        
         )
     }
 }
@@ -90,9 +94,8 @@ const Contact = styled.div`
     }
 `
 const ContactContainer = styled.div`
-    width:50%;
+    width:100%;
     justify-content: space-between;
-
     @media (max-width: 500px){
         width:100%;
     }

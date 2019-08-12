@@ -23,11 +23,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-    font: inherit;
-    font-family: 'Roboto', sans-serif; 
-    text-transform: uppercase;
-    vertical-align: baseline;
-    letter-spacing:2px;
+	font: inherit;
+	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -36,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	letter-spacing:2px;
 }
 ol, ul {
 	list-style: none;
@@ -52,5 +50,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
 `
 export default Global;
