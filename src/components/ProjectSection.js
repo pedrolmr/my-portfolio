@@ -29,8 +29,7 @@ class ProjectSection extends Component {
     }
     render(){
         return (
-            // <Projects id="ProjectSection">
-            <Wrapper title="Projects">
+            <Wrapper id="ProjectSection" title="Projects">
                 {this.props.data.map((card, i) => <Card isOdd={i % 2} card={card}/>)}
             </Wrapper>
         )

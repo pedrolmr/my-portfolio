@@ -33,7 +33,8 @@ class ContactSection extends Component{
     render(){
         return (
             // <Contact id="Contact">
-            <Wrapper title="Contact" direction="column" width="100%">
+            <>
+            <Wrapper id="Contact" title="Contact" direction="column" width="100%">
                 <ContactContainer>
                     <form name="contact" method="POST">
                         <input type="hidden" name="form-name" value="contact" />
@@ -75,7 +76,7 @@ class ContactSection extends Component{
                 </ContactContainer>
 
             </Wrapper>
-        
+            </>
         )
     }
 }

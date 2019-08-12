@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = ({ className, title, children, midHeight }) => {
+const Wrapper = ({ className, title, children, midHeight,id }) => {
     return (
         <div className={className} midHeight={midHeight}>
-            <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem' }}>{title}</h1>
-            {children}
+        <label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>
+        <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem' }}>{title}</h1>
+        {children}
         </div>
     );
 };
@@ -20,7 +21,8 @@ const CustomWrapper = styled(Wrapper)`
   border-bottom: 1px solid #ededed;
   line-height:1.5;
   text-transform: uppercase;
-  width: ${props => props.width ? props.width : null}
+  width: ${props => props.width ? props.width : null};
+
 `;
 
 export default CustomWrapper;

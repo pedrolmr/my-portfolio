@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { device } from './breakpoints'
 
 import Wrapper from './Wrapper'
+import { screen } from './globals/MediaQueries'
 
 import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
     return(
-        // <About id="About">
         <Wrapper id="About" title="About" direction="column" midHeight align="center">
            <AboutWrapper>
                 <Image>
@@ -28,11 +28,18 @@ const AboutSection = () => {
 }
 const AboutWrapper = styled.div`
     display:flex;
-    @media(max-width:500px){
+    ${screen.phoneS`
         flex-direction:column;
         align-items:center;
         width:100%;
+        font-size:0.8rem;
+        text-align:center;`
     }
+    /* @media(max-width:500px){
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+    } */
 `
 const Image = styled.div`
     display:flex;
@@ -40,23 +47,24 @@ const Image = styled.div`
     align-items:center;
     width:50%;
     box-sizing:border-box;
-    @media(max-width:500px){
+    ${screen.phoneS`width:100%`}
+    /* @media(max-width:500px){
         width:100%;
-    }
+    } */
 `
 const View = styled.div`
     width:50%;
     display:flex;
     flex-direction: column;
     justify-content:center;
-    @media(max-width:500px){
+    ${screen.phoneS`width:100%`}
+    /* @media(max-width:500px){
         width:100%;
-    }
+    } */
 `
 const Icons = styled.div`
     display:flex;
     justify-content:center;
-
     a{
         color:#155799;
     }

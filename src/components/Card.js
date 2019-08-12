@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import styles from '../App.css'
+import { screen } from './globals/MediaQueries'
 
 const Card = (props) => {
     return(
@@ -42,10 +43,16 @@ const Image = styled.div`
 const ProjectCard = styled.div`
     display:flex;
     height:100%;
-    @media(max-width: 500px){
+    ${screen.phoneS`
         flex-direction:column;
         align-items:center;
+        width:100%;
+        font-size:0.8rem;`
     }
+    /* @media(max-width: 500px){
+        flex-direction:column;
+        align-items:center;
+    } */
 `
 const View = styled.div`
     display:flex;
@@ -58,7 +65,15 @@ const View = styled.div`
         font-weight:bold;
         text-align:center;
     }
-    @media(max-width: 500px){
+    ${screen.phoneS`
+        width:100%
+        order:2
+        h2{
+            font-size:1.5rem;
+            text-align:center;
+        }`
+    }
+    /* @media(max-width: 500px){
         width:100%;
         order: 2;
         h2{
@@ -66,7 +81,7 @@ const View = styled.div`
             font-weight:bold;
             text-align:center;
         }
-    }
+    } */
 `
 const ProjectButtons = styled.div`
     display: flex;
