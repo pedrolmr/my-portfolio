@@ -32,10 +32,18 @@ flex-direction:column;
 align-items:center;
 justify-content:center;
 height:100%;
+@media(max-width:360px){
+    border:1px solid black;
+    margin-top:44px;
+}
     color:#fff;
     width:50%;
     h1{
         font-size:3rem;
+        @media(max-width:768px){
+            border:1px solid black;
+            line-height:1em;
+        }
         @media(max-width:500px){
             line-height:1em;
         }
@@ -43,6 +51,9 @@ height:100%;
 
     p{
         font-size:1.5rem;
+         @media(max-width:768px){
+            border:1px solid black;
+        }
     }
     a{
         color:#fff;

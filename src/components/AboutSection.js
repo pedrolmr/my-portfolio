@@ -34,8 +34,6 @@ const About = styled.div`
     h1{
         text-align:center;
     }
-
-
 `
 const AboutWrapper = styled.div`
     display:flex;

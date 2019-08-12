@@ -1,16 +1,15 @@
+*{
+  box-sizing: border-box;
+}
 .App{
   /* font-family: 'Roboto Mono', monospace;*/
   font-family: 'Roboto', sans-serif; 
   /* font-family: 'Roboto Condensed', sans-serif; */
   line-height: 1.5rem;
+  box-sizing: border-box;
 }
 
 :local(.odd){
   width:100%;
   order:1;
-
-  @media(max-width: 500px){
-      display:flex;
-      order: 1;
-  }
 }
