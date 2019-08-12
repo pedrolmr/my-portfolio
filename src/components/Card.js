@@ -55,6 +55,12 @@ const ProjectCard = styled.div`
         width:100%;
         font-size:0.8rem;`
     }
+    ${screen.phoneL`
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        font-size:0.8rem;`
+    }
     /* @media(max-width: 500px){
         flex-direction:column;
         align-items:center;
@@ -80,6 +86,14 @@ const View = styled.div`
         }`
     }
     ${screen.phoneM`
+        width:100%
+        order:2
+        h2{
+            font-size:1.5rem;
+            text-align:center;
+        }`
+    }
+    ${screen.phoneL`
         width:100%
         order:2
         h2{
