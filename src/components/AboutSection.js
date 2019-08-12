@@ -35,6 +35,11 @@ const AboutWrapper = styled.div`
         font-size:0.8rem;
         text-align:center;`
     }
+     ${screen.phoneM`flex-direction:column;
+        align-items:center;
+        width:100%;
+        font-size:0.8rem;
+        text-align:center;`}
     /* @media(max-width:500px){
         flex-direction:column;
         align-items:center;
@@ -58,6 +63,7 @@ const View = styled.div`
     flex-direction: column;
     justify-content:center;
     ${screen.phoneS`width:100%`}
+    ${screen.phoneM`width:100%`}
     /* @media(max-width:500px){
         width:100%;
     } */

@@ -28,13 +28,13 @@ const NavBar = styled.div`
     overflow:hidden;
     z-index:1;
     background-color:#516395;
-
     a{
         padding:10px;
         text-decoration:none;
         color:#fff;
          ${screen.phoneS`font-size:0.7rem`}
+          ${screen.phoneM`font-size: 0.7rem`}
     }
-
+ 
 `
 export default Navigation;
