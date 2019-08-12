@@ -16,8 +16,8 @@ const Card = (props) => {
                     <p>{props.card.description}</p>
 
                     <ProjectButtons>
-                        <a href="#">View code</a>
-                        <a href="#">View</a>
+                        <a target="_blank" href={props.card.github}>View code</a>
+                        <a target="_blank" href={props.card.url}>View</a>
                     </ProjectButtons>
                 </View>
             </ProjectCard>
@@ -61,6 +61,12 @@ const ProjectCard = styled.div`
         width:100%;
         font-size:0.8rem;`
     }
+    ${screen.Tablet`
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        font-size:0.8rem;`
+    }
     /* @media(max-width: 500px){
         flex-direction:column;
         align-items:center;
@@ -94,6 +100,14 @@ const View = styled.div`
         }`
     }
     ${screen.phoneL`
+        width:100%
+        order:2
+        h2{
+            font-size:1.5rem;
+            text-align:center;
+        }`
+    }
+    ${screen.Tablet`
         width:100%
         order:2
         h2{

@@ -13,5 +13,9 @@ export const screen = {
         const styles = args;
         // return `@media (max-width: 411px){${styles}}`
         return `@media only screen and (max-width: 414px){${styles}}`
+    },
+    Tablet: (...args) => {
+        const styles = args;
+        return `@media only screen and (max-width: 700px){${styles}}`
     }
 }

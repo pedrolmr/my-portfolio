@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = ({ className, title, children, midHeight,id }) => {
+import { screen } from './globals/MediaQueries';
+
+const Wrapper = ({ className, title, children, midHeight, id, last }) => {
     return (
-        <div className={className} midHeight={midHeight}>
+        <div className={className} midHeight={midHeight} last={last}>
         <label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>
         <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem' }}>{title}</h1>
         {children}
@@ -18,7 +20,7 @@ const CustomWrapper = styled(Wrapper)`
   height: ${props => (props.midHeight ? "50%" : "100%")};
   padding:10px;
   margin:10px;
-  border-bottom: 1px solid #ededed;
+  /* border-bottom: 1px solid #ededed; */
   line-height:1.5;
   text-transform: uppercase;
   width: ${props => props.width ? props.width : null};

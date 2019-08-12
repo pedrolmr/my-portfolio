@@ -47,6 +47,12 @@ const AboutWrapper = styled.div`
         width:100%;
         font-size:0.8rem;
         text-align:center;`}
+    ${screen.Tablet`
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        font-size:0.8rem;
+        text-align:center;`}
     /* @media(max-width:500px){
         flex-direction:column;
         align-items:center;
@@ -62,6 +68,7 @@ const Image = styled.div`
     ${screen.phoneS`width:100%`}
     ${screen.phoneM`width:100%`}
     ${screen.phoneL`width:100%`}
+    ${screen.Tablet`width:100%`}
     /* @media(max-width:500px){
         width:100%;
     } */
@@ -74,6 +81,7 @@ const View = styled.div`
     ${screen.phoneS`width:100%`}
     ${screen.phoneM`width:100%`}
     ${screen.phoneL`width:100%`}
+    ${screen.Tablet`width:100%`}
     /* @media(max-width:500px){
         width:100%;
     } */

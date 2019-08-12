@@ -32,9 +32,7 @@ class ContactSection extends Component{
     }
     render(){
         return (
-            // <Contact id="Contact">
-            <>
-            <Wrapper id="Contact" title="Contact" direction="column" width="100%">
+            <Contact id="Contact" title="Contact" direction="column" width="100%">
                 <ContactContainer>
                     <form name="contact" method="POST">
                         <input type="hidden" name="form-name" value="contact" />
@@ -75,13 +73,12 @@ class ContactSection extends Component{
                     </form>
                 </ContactContainer>
 
-            </Wrapper>
-            </>
+            </Contact>
         )
     }
 }
-const Contact = styled.div`
-    width:100%;
+const Contact = styled(Wrapper)`
+    width:50%;
     display:flex;
     flex-direction:column;
     align-items:center;
