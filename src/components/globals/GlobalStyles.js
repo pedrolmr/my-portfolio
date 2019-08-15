@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { screen } from './MediaQueries';
 
 const Global = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 

@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-import { screen } from './globals/MediaQueries';
-
 const Wrapper = ({ className, title, children, midHeight, id, last }) => {
     return (
         <div className={className} midHeight={midHeight} last={last}>
-        <label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>
+    {/*<label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>*/}
+        <div style={{ paddingTop: '44px' }} id={id}></div>
         <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem' }}>{title}</h1>
         {children}
         </div>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 
 import Card from './Card';
 import Wrapper from './Wrapper';
