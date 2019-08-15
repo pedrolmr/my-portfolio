@@ -53,18 +53,17 @@ const AboutWrapper = styled.div`
         width:100%;
         font-size:0.8rem;
         text-align:center;`}
-    /* @media(max-width:500px){
-        flex-direction:column;
-        align-items:center;
-        width:100%;
-    } */
+
 `
 const Image = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
-    width:50%;
+    width:100%;
     box-sizing:border-box;
+    img{
+        width:30%;
+    }
     ${screen.phoneS`width:100%`}
     ${screen.phoneM`width:100%`}
     ${screen.phoneL`width:100%`}
@@ -75,9 +74,12 @@ const Image = styled.div`
 `
 const View = styled.div`
     display:flex;
-    width:50%;
+    width:100%;
     flex-direction: column;
     justify-content:center;
+    p{
+        margin:5% 0 5% 0;
+    }
     ${screen.phoneS`width:100%`}
     ${screen.phoneM`width:100%`}
     ${screen.phoneL`width:100%`}
@@ -86,7 +88,13 @@ const View = styled.div`
 const Icons = styled.div`
     display:flex;
     justify-content:center;
-    a{
+    a:nth-child(1){
+        color:#64c3e0;     
+    }
+    a:nth-child(2){
+        color:#000;
+    }
+    a:nth-child(3){
         color:#155799;
     }
 
