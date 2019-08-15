@@ -70,7 +70,7 @@ const ProjectCard = styled.div`
 `
 const View = styled.div`
     display:flex;
-    padding:3%;
+    padding:5%;
     width:50%;
     flex-direction: column;
     justify-content:center;
@@ -78,6 +78,9 @@ const View = styled.div`
         font-size:1.2rem;
         font-weight:bold;
         text-align:center;
+    }
+    p{
+        margin:5% 0 5% 0;
     }
     ${screen.phoneS`
         width:100%

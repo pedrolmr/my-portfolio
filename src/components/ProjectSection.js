@@ -38,13 +38,5 @@ class ProjectSection extends Component {
         )
     }
 }
-// const Projects = styled.div`
-//     width:80%;
-//     padding:40px;
-//     border-bottom: 1px solid #ededed;
-//     h1{
-//         text-align:center;
-//     }
-// `
 
 export default ProjectSection;

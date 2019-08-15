@@ -6,7 +6,7 @@ const Wrapper = ({ className, title, children, midHeight, id, last }) => {
         <div className={className} midHeight={midHeight} last={last}>
     {/*<label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>*/}
         <div style={{ paddingTop: '44px' }} id={id}></div>
-        <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem' }}>{title}</h1>
+        <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem', marginBottom:'5%'}}>{title}</h1>
         {children}
         </div>
     );
@@ -19,11 +19,9 @@ const CustomWrapper = styled(Wrapper)`
   height: ${props => (props.midHeight ? "50%" : "100%")};
   padding:10px;
   margin:10px;
-  /* border-bottom: 1px solid #ededed; */
   line-height:1.5;
   text-transform: uppercase;
   width: ${props => props.width ? props.width : null};
-
 `;
 
 export default CustomWrapper;
