@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 import { screen } from './globals/MediaQueries'
 
@@ -8,10 +9,10 @@ class Navigation extends Component {
         return (
             <div>
                 <NavBar>
-                    <a href="#TopHeader">HOME</a>
-                    <a href="#About">ABOUT</a>
-                    <a href="#ProjectSection">PROJECTS</a>
-                    <a href="#Contact">CONTACT</a>
+                    <Link activeClass="active" to="TopHeader" spy={true} smooth={true} offset={-70} duration={100}>HOME</Link>
+                    <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={100}>ABOUT</Link>
+                    <Link activeClass="active" to="ProjectSection" spy={true} smooth={true} offset={-70} duration={100}>PROJECTS</Link>
+                    <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={100}>CONTACT</Link>
                 </NavBar>
             </div>
         )
@@ -32,8 +33,8 @@ const NavBar = styled.div`
         padding:10px;
         text-decoration:none;
         color:#fff;
-         ${screen.phoneS`font-size:0.7rem`}
-          ${screen.phoneM`font-size: 0.7rem`}
+        ${screen.phoneS`font-size:0.7rem`}
+        ${screen.phoneM`font-size: 0.7rem`}
     }
  
 `

@@ -4,10 +4,9 @@ import styled from "styled-components";
 const Wrapper = ({ className, title, children, midHeight, id, last }) => {
     return (
         <div className={className} midHeight={midHeight} last={last}>
-    {/*<label style={{ paddingTop: '44px', opacity: '0'}} id={id}>{id}</label>*/}
-        <div style={{ paddingTop: '44px' }} id={id}></div>
-        <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem', marginBottom:'5%'}}>{title}</h1>
-        {children}
+            <div style={{ paddingTop: '44px' }} id={id}></div>
+            <h1 style={{ textAlign:'center', fontWeight:'bold', fontSize:'1.5rem', marginBottom:'5%'}}>{title}</h1>
+            {children}
         </div>
     );
 };

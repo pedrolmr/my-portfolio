@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { device } from './breakpoints'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Wrapper from './Wrapper'
 import { screen } from './globals/MediaQueries'
@@ -68,9 +67,6 @@ const Image = styled.div`
     ${screen.phoneM`width:100%`}
     ${screen.phoneL`width:100%`}
     ${screen.Tablet`width:100%`}
-    /* @media(max-width:500px){
-        width:100%;
-    } */
 `
 const View = styled.div`
     display:flex;
