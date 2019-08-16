@@ -9,10 +9,10 @@ class Navigation extends Component {
         return (
             <div>
                 <NavBar>
-                    <Link activeClass="active" to="TopHeader" spy={true} smooth={true} offset={-70} duration={100}>HOME</Link>
-                    <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={100}>ABOUT</Link>
-                    <Link activeClass="active" to="ProjectSection" spy={true} smooth={true} offset={-70} duration={100}>PROJECTS</Link>
-                    <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={100}>CONTACT</Link>
+                    <Link activeClass="active" to="TopHeader" spy={true} smooth={true} offset={-70} duration={200}>HOME</Link>
+                    <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={200}>ABOUT</Link>
+                    <Link activeClass="active" to="ProjectSection" spy={true} smooth={true} offset={-70} duration={200}>PROJECTS</Link>
+                    <Link activeClass="active" to="Contact" spy={true} smooth={true} offset={-70} duration={200}>CONTACT</Link>
                 </NavBar>
             </div>
         )
