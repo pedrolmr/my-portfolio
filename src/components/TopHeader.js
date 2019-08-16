@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-scroll';
 
 import { screen } from './globals/MediaQueries'
-
 import Wrapper from './Wrapper';
 
 const TopHeader = () => {
@@ -12,7 +12,7 @@ const TopHeader = () => {
             <TopHeaderDiv>
                 <h1>Pedro Montesinos</h1>
                 <p>FullStack Developer</p>
-                <a href="#About"><FontAwesomeIcon icon="angle-double-down" fixedWidth size="3x"/></a>  
+                <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={200}><FontAwesomeIcon icon="angle-double-down" fixedWidth size="3x" /></Link>
             </TopHeaderDiv>
        </Header>
     )
