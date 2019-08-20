@@ -33,7 +33,8 @@ class ProjectSection extends Component {
     render(){
         return (
             <Wrapper id="ProjectSection" title="Projects" last>
-                {this.props.data.map((card, i) => <Card isOdd={i % 2} card={card}/>)}
+                {this.props.data.map((card, i) => <Card isOdd={i % 2} card={card}/>)
+                }
             </Wrapper>
         )
     }

@@ -3,3 +3,6 @@
   order:1;
   padding-top:10%;
 }
+:local(.lastIndex){
+  border-bottom: 1px solid black;
+}
