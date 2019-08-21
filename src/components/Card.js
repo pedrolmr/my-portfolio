@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import styles from '../App.css'
 import { screen } from './globals/MediaQueries'
+import { Button } from './Buttons';
 
 const Card = (props) => {
     return(
@@ -15,10 +16,16 @@ const Card = (props) => {
                     <h2>{props.card.title}</h2>
                     <p>{props.card.description}</p>
 
-                    <ProjectButtons>
+                    {/*<ProjectButtons>
                         <a target="_blank" rel="noopener noreferrer" href={props.card.github}>View code</a>
                         <a target="_blank" rel="noopener noreferrer" href={props.card.url}>View</a>
+                    </ProjectButtons>*/}
+
+                    <ProjectButtons>
+                        <Button target="_blank" rel="noopener noreferrer" href={props.card.github}>View code</Button>
+                        <Button target="_blank" rel="noopener noreferrer" href={props.card.url}>View</Button>
                     </ProjectButtons>
+
                 </View>
             </ProjectCard>
         </CardSection>
@@ -117,7 +124,8 @@ const View = styled.div`
 `
 const ProjectButtons = styled.div`
     display: flex;
-    a{
+    justify-content:space-between;
+    /* a{
         border:1px solid grey;
         display:flex;
         flex-direction: row;
@@ -125,7 +133,7 @@ const ProjectButtons = styled.div`
         justify-content:center;
         text-decoration:none;
         color: #000;
-    }
+    } */
 `
 
 export default Card;

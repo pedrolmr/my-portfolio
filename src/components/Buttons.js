@@ -1,0 +1,30 @@
+import styled from 'styled-components';
+
+const Transform = (pixels, boxShadow) => {
+    return `transform: translateY(${pixels}px); box-shadow: ${boxShadow}`;
+};
+
+export const Button = styled.a`
+  outline: none;
+  border: none;
+  width:45%;
+  cursor: pointer;
+  background-color: #30336b;
+  color: white;
+  border-radius: 10px;
+  text-decoration:none;
+  text-align:center;
+  padding: 15px 0;
+  box-shadow: 0 6px #130f40;
+  transition: all 0.2s;
+  &:hover {
+    ${Transform(3, "0 4px #130f40")}
+  }
+  &:active {
+    ${Transform(6, "none")}
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+`;
