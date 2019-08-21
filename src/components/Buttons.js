@@ -38,7 +38,7 @@ export const Button = styled.a`
         margin-bottom:10px;
     `
     }
-    ${screen.PhoneL`
+    ${screen.phoneL`
         width:100%;
         margin-bottom:10px;
     `

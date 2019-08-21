@@ -129,11 +129,11 @@ const ProjectButtons = styled.div`
         flex-direction:column;
     `
     }
-    ${screen.PhoneM`
+    ${screen.phoneM`
         flex-direction:column;
     `
     }
-    ${screen.PhoneL`
+    ${screen.phoneL`
         flex-direction:column;
     `
     }
