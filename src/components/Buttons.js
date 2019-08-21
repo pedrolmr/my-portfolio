@@ -28,6 +28,21 @@ export const Button = styled.a`
       opacity: 0;
     }
   }
+    ${screen.phoneS`
+        width:100%;
+        margin-bottom:10px;
+    `
+    }
+    ${screen.phoneM`
+        width:100%;
+        margin-bottom:10px;
+    `
+    }
+    ${screen.PhoneL`
+        width:100%;
+        margin-bottom:10px;
+    `
+    }
     ${screen.Tablet`
         width:100%;
         margin-bottom:10px;

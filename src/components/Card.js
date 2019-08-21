@@ -125,6 +125,18 @@ const View = styled.div`
 const ProjectButtons = styled.div`
     display: flex;
     justify-content:space-between;
+    ${screen.phoneS`
+        flex-direction:column;
+    `
+    }
+    ${screen.PhoneM`
+        flex-direction:column;
+    `
+    }
+    ${screen.PhoneL`
+        flex-direction:column;
+    `
+    }
     ${screen.Tablet`
         flex-direction:column;
     `
