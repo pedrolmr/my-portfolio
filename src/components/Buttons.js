@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { screen } from './globals/MediaQueries'
 
 const Transform = (pixels, boxShadow) => {
     return `transform: translateY(${pixels}px); box-shadow: ${boxShadow}`;
@@ -27,4 +28,9 @@ export const Button = styled.a`
       opacity: 0;
     }
   }
+    ${screen.Tablet`
+        width:100%;
+        margin-bottom:10px;
+    `
+    }
 `;

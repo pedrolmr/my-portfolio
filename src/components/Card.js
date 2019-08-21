@@ -125,6 +125,10 @@ const View = styled.div`
 const ProjectButtons = styled.div`
     display: flex;
     justify-content:space-between;
+    ${screen.Tablet`
+        flex-direction:column;
+    `
+    }
     /* a{
         border:1px solid grey;
         display:flex;
