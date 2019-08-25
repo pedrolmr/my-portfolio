@@ -14,7 +14,7 @@ const TopHeader = () => {
                 <p>FullStack Developer</p>
                 <Link activeClass="active" to="About" spy={true} smooth={true} offset={-70} duration={200}><FontAwesomeIcon icon="angle-double-down" fixedWidth size="3x" /></Link>
             </TopHeaderDiv>
-       </Header>
+        </Header>
     )
 }
 const Header = styled(Wrapper)`

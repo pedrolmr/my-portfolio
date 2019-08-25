@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Wrapper = ({ className, title, children, midHeight, id}) => {
+const Wrapper = ({ className, title, children, midHeight, id }) => {
     return (
         <div className={className} midHeight={midHeight}>
             <div style={{ paddingTop: '44px' }} id={id}></div>

@@ -16,11 +16,6 @@ const Card = (props) => {
                     <h2>{props.card.title}</h2>
                     <p>{props.card.description}</p>
 
-                    {/*<ProjectButtons>
-                        <a target="_blank" rel="noopener noreferrer" href={props.card.github}>View code</a>
-                        <a target="_blank" rel="noopener noreferrer" href={props.card.url}>View</a>
-                    </ProjectButtons>*/}
-
                     <ProjectButtons>
                         <Button target="_blank" rel="noopener noreferrer" href={props.card.github}>View code</Button>
                         <Button target="_blank" rel="noopener noreferrer" href={props.card.url}>View</Button>

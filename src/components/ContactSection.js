@@ -23,7 +23,7 @@ const ContactSection = () => {
         email: "",
         message: ""
     }
-    const [{ name, email, message}, setState ] = useState(initialState);
+    const [{ name, email, message }, setState ] = useState(initialState);
 
     const onChange = e => {
         const { name, value } = e.target;
