@@ -38,6 +38,18 @@ const Image = styled.div`
     align-items:center;
     width:50%;
     padding:0;
+    ${screen.phoneS`
+        width:100%`
+    }
+     ${screen.phoneM`
+        width:100%`
+    }
+    ${screen.phoneL`
+        width:100%`
+    }
+    ${screen.Tablet`
+        width:100%`
+    }
 
 `
 const ProjectCard = styled.div`
