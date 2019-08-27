@@ -35,13 +35,12 @@ const BodyContainer = styled.div`
 `
 const Footer = styled.div`
     display:flex;
-    height:60px;
+    height:50px;
     justify-content:center;
     align-items:center;
-    /* margin-top:10px; */
     background-color:#516395;
-    color:#6b7eb3;
-    margin-top:40px;
+    color:#5f72a3;
+    letter-spacing:0;
 `
 
 export default Main;
