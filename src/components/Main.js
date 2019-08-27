@@ -10,7 +10,6 @@ import ContactSection from './ContactSection'
 const Main = () => {
    
     return(
-        
         <Container>
         <Navigation/>
             <TopHeader/>
@@ -23,7 +22,6 @@ const Main = () => {
                 <p>&copy;Pedro Montesinos 2019</p>
             </Footer>
         </Container>
-    
     );
 
 }
@@ -40,7 +38,7 @@ const Footer = styled.div`
     height:60px;
     justify-content:center;
     align-items:center;
-    margin-top:10px;
+    /* margin-top:10px; */
     background-color:#516395;
     color:#6b7eb3;
     margin-top:40px;

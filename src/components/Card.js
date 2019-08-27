@@ -13,7 +13,7 @@ const Card = (props) => {
                     <img src={props.card.image} alt="project-pic" width={props.isOdd ? '100%' : '50%'}/>
                 </Image>
                 <View>
-                    <h2>{props.card.title}</h2>
+                    <span>{props.card.title}</span>
                     <p>{props.card.description}</p>
 
                     <ProjectButtons>
@@ -37,14 +37,14 @@ const Image = styled.div`
     justify-content:space-around;
     align-items:center;
     width:50%;
-    img{
-        height:auto;
-    }
+    padding:0;
 
 `
 const ProjectCard = styled.div`
     display:flex;
     height:100%;
+    justify-content:center;
+    align-items:center;
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
@@ -76,7 +76,7 @@ const View = styled.div`
     width:50%;
     flex-direction: column;
     justify-content:center;
-    h2{
+    span{
         font-size:1.2rem;
         font-weight:bold;
         text-align:center;
@@ -136,15 +136,6 @@ const ProjectButtons = styled.div`
         flex-direction:column;
     `
     }
-    /* a{
-        border:1px solid grey;
-        display:flex;
-        flex-direction: row;
-        width:100%;
-        justify-content:center;
-        text-decoration:none;
-        color: #000;
-    } */
 `
 
 export default Card;

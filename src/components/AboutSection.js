@@ -8,7 +8,7 @@ import { screen } from './globals/MediaQueries'
 import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
     return(
-        <Wrapper id="About" title="About" direction="column" midHeight align="center">
+        <Wrapper id="About" title="About" direction="column" midHeight align="center" lineBreak>
            <AboutWrapper>
                 <Image>
                     <img src={bitmoji} alt="bitmoji" width="50%"/>
