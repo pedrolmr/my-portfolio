@@ -61,25 +61,29 @@ const ProjectCard = styled.div`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;`
+        font-size:0.8rem;
+        padding:4% 0;`
     }
      ${screen.phoneM`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;`
+        font-size:0.8rem;
+        padding:4% 0;`
     }
     ${screen.phoneL`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;`
+        font-size:0.8rem;
+        padding:4% 0;`
     }
     ${screen.Tablet`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;`
+        font-size:0.8rem;
+        padding:4% 0;`
     }
 `
 const View = styled.div`
