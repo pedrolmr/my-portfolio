@@ -18,7 +18,7 @@ const AboutSection = () => {
                     <Icons>
                         <a href="mailto:pedrolmr1998@gmail.com"><FontAwesomeIcon icon='envelope-square' fixedWidth size="2x"/></a>
                         <a href="https://github.com/pedrolmr" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'github-square']} fixedWidth size="2x"/></a>
-                        <a href="https://www.linkedin.com/in/pedrolmr1998/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']} fixedWidth size="2x" /></a>
+                        <a href="https://www.linkedin.com/in/pedromontesinos" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={['fab', 'linkedin']} fixedWidth size="2x" /></a>
                     </Icons>
                 </View>
             </AboutWrapper>
