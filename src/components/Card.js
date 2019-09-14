@@ -10,7 +10,7 @@ const Card = (props) => {
         <CardSection>
             <ProjectCard>
                 <Image className={props.isOdd ? styles.isOdd : null}>
-                    <img src={props.card.image} alt="project-pic" width={props.isOdd ? '100%' : '50%'}/>
+                <img src={props.card.image} alt="project-pic" width={props.isOdd ? '100%' : '50%'}/>
                 </Image>
                 <View>
                     <span>{props.card.title}</span>
