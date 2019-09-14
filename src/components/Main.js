@@ -8,26 +8,22 @@ import ProjectSection from './ProjectSection';
 import ContactSection from './ContactSection'
 
 const Main = () => {
-   
     return(
-        <Container>
+        <>
         <Navigation/>
-            <TopHeader/>
-            <AboutSection />
+        <TopHeader/>
             <BodyContainer>
+                <AboutSection />
                 <ProjectSection />
                 <ContactSection />
             </BodyContainer>
             <Footer>
                 <p>&copy;Pedro Montesinos 2019</p>
             </Footer>
-        </Container>
+        </>
     );
 
 }
-const Container = styled.div`
-
-`
 const BodyContainer = styled.div`
     display:flex;
     flex-direction:column;

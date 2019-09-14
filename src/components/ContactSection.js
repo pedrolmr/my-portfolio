@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import Wrapper from './Wrapper';
+import { screen } from './globals/MediaQueries'
 
 const ContactSection = () => {
     const initialState = {
@@ -78,25 +79,33 @@ const Contact = styled(Wrapper)`
         padding:30px;
         box-sizing: border-box;
     }
+    ${screen.Tablet`
+        width:100%;
+        padding:30px;
+        box-sizing: border-box;`
+    }
 `
 const ContactContainer = styled.div`
     width:100%;
-    justify-content: space-between;
-    @media (max-width: 500px){
-        width:100%;
+    /* justify-content: space-between; */
+    ${screen.Tablet`
+        width:100%;`
     }
 
 `
 const InputWrapper = styled.div`
     display:flex;
     justify-content:center;
-    margin-bottom:20px;
 `
 const TwoInputs = styled.div`
     display:flex;
     width:100%;
     justify-content:space-between;
-
+          margin-bottom:10px;
+        ${screen.Tablet`
+            flex-direction:column;
+            margin-bottom:10px;`
+        }
     input{
         display:flex;
         width:49%;
@@ -106,6 +115,15 @@ const TwoInputs = styled.div`
         outline:none;
         border-radius:5px;
         border:1px solid #dbdbdb;
+        ${screen.Tablet`
+            width:100%;
+            `
+        }
+    }
+    input:nth-child(1){
+        ${screen.Tablet`
+            margin-bottom:10px;`
+        }
     }
 `
 const Textarea = styled.textarea`
@@ -115,7 +133,7 @@ const Textarea = styled.textarea`
     padding:15px;
     box-sizing: border-box;
     outline:none;
-    margin-bottom:20px;
+    margin-bottom:5px;
     border-radius:5px;
     border:1px solid #dbdbdb;
 `
@@ -127,7 +145,6 @@ const Buttons = styled.div`
     display:flex;
     width:75%;
     justify-content:space-between;
-
     button{
         border: 1px solid #d1cfcf;
         border-radius:3px;
