@@ -6,15 +6,21 @@ import { screen } from './globals/MediaQueries'
 import { Button } from './Buttons';
 
 const Card = (props) => {
+    //tech.slice(0, -1).join(',')+ ',' +tech.slice(-1);
     return(
         <CardSection>
             <ProjectCard>
                 <Image className={props.isOdd ? styles.isOdd : null}>
-                <img src={props.card.image} alt="project-pic" width={props.isOdd ? '100%' : '50%'}/>
+                    <img src={props.card.image} alt="project-pic" width={props.index === 2 ? '100%' : '50%'}/>
+
                 </Image>
                 <View>
                     <span>{props.card.title}</span>
                     <p>{props.card.description}</p>
+                    <Tech>
+                        <span>TECH:</span>
+                        <p style={{fontWeight: 'bold'}}>{props.card.tech.slice(0, -1).join(' , ') + ', ' + props.card.tech.slice(-1)}</p>
+                    </Tech>
 
                     <ProjectButtons>
                         <Button target="_blank" rel="noopener noreferrer" href={props.card.github}>View code</Button>
@@ -38,6 +44,11 @@ const Image = styled.div`
     align-items:center;
     width:50%;
     padding:0;
+    margin:0;
+    img{
+        padding:0;
+        margin:0;
+    }
     ${screen.phoneS`
         width:100%`
     }
@@ -131,6 +142,20 @@ const View = styled.div`
             font-size:1.5rem;
             text-align:center;
         }`
+    }
+`
+const Tech = styled.div`
+    border:1px solid black;
+    border-radius:5px;
+    display:flex;
+    flex-direction:column;
+    margin: 5px 0;
+    span{
+        border-bottom:1px solid black;
+    }
+    p{
+        text-align:center;
+        padding:0 5px;
     }
 `
 const ProjectButtons = styled.div`
