@@ -6,7 +6,6 @@ import { screen } from './globals/MediaQueries'
 import { Button } from './Buttons';
 
 const Card = (props) => {
-    //tech.slice(0, -1).join(',')+ ',' +tech.slice(-1);
     return(
         <CardSection>
             <ProjectCard>
