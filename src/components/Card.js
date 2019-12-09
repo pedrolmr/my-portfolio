@@ -146,12 +146,18 @@ const View = styled.div`
 `
 const Tech = styled.div`
     border:1px solid rgb(236, 236, 236);
-    border-radius:5px;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    border-width: 1px;
     display:flex;
     flex-direction:column;
     margin: 5px 0;
     span{
-        border-bottom:1px solid rgb(236, 236, 236);
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        background: rgb(81,99,149);
+        background: radial-gradient(circle, rgba(81,99,149,1) 0%, rgba(48,51,107,1) 100%);
+        color:#fff;
     }
     p{
         text-align:center;
