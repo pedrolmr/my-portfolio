@@ -24,7 +24,7 @@ const ContactSection = () => {
 
     const prevent = e => {
         if(!name || !email || !message){
-            alert("please fill out all the fields")
+            alert("please fill out all the fields");
             e.preventDefault();
         }
     }
@@ -33,7 +33,6 @@ const ContactSection = () => {
         <Contact id="Contact" title="Contact" direction="column" width="100%">
             <ContactContainer>
                 <form name="contact" method="POST" onSubmit={prevent}>
-                {/*<form name="contact" onSubmit={handleSubmit}>*/}
                     <input type="hidden" name="form-name" value="contact"/>
                     <InputWrapper>
                         <TwoInputs>
