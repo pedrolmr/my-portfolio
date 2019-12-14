@@ -11,6 +11,7 @@ const ContactSection = () => {
         message: ""
     }
     const [{ name, email, message }, setState ] = useState(initialState);
+    const [error, setError] = useState("");
 
     const onChange = e => {
         const { name, value } = e.target;
@@ -25,6 +26,7 @@ const ContactSection = () => {
     const prevent = e => {
         if(!name || !email || !message){
             alert("please fill out all the fields");
+            setError("Fill out all the fields");
             e.preventDefault();
         }
     }
@@ -32,6 +34,7 @@ const ContactSection = () => {
     return (
         <Contact id="Contact" title="Contact" direction="column" width="100%">
             <ContactContainer>
+                <span>{error}</span>
                 <form name="contact" method="POST" onSubmit={prevent}>
                     <input type="hidden" name="form-name" value="contact"/>
                     <InputWrapper>
