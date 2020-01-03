@@ -25,7 +25,6 @@ const ContactSection = () => {
 
     const prevent = e => {
         if(!name || !email || !message){
-            alert("please fill out all the fields");
             setError("Fill out all the fields");
             e.preventDefault();
         }
