@@ -18,7 +18,7 @@ const Main = () => {
                 <ContactSection />
             </BodyContainer>
             <Footer>
-                <p>&copy;Pedro Montesinos 2019</p>
+                <p>&copy;Pedro Montesinos 2020</p>
             </Footer>
         </>
     );

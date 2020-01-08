@@ -33,7 +33,7 @@ const ContactSection = () => {
     return (
         <Contact id="Contact" title="Contact" direction="column" width="100%">
             <ContactContainer>
-                <span>{error}</span>
+                {error ? <div className="error-message">{error}</div> : ""}
                 <form name="contact" method="POST" onSubmit={prevent}>
                     <input type="hidden" name="form-name" value="contact"/>
                     <InputWrapper>
@@ -100,6 +100,15 @@ const ContactContainer = styled.div`
     /* justify-content: space-between; */
     ${screen.Tablet`
         width:100%;`
+    }
+    .error-message{
+        border-radius: 5px;
+        text-align:center;
+        padding:5px;
+        background-color: #ad2f2f;
+        color:white;
+        margin-bottom:10px;
+        font-weight:bold;
     }
 
 `
