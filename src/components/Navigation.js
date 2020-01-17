@@ -32,6 +32,11 @@ const NavBar = styled.div`
         color:#fff;
         ${screen.phoneS`font-size:0.7rem`}
         ${screen.phoneM`font-size: 0.7rem`}
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    a:hover{
+        background:#5f72a3;
     }
  
 `

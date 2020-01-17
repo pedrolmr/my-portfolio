@@ -10,7 +10,8 @@ const Card = (props) => {
         <CardSection>
             <ProjectCard>
                 <Image className={props.isOdd ? styles.isOdd : null}>
-                    <img src={props.card.image} alt="project-pic" width={props.index === 2 ? '80%' : '50%'}/>
+    {/*<img src={props.card.image} alt="project-pic" width={props.index === 2 ? '80%' : '50%'}/>*/}
+                    <img src={props.card.image} alt="project-pic"/>
                 </Image>
                 <View>
                     <span>{props.card.title}</span>
@@ -42,13 +43,22 @@ const Image = styled.div`
     display:flex;
     justify-content:space-around;
     align-items:center;
-    width:50%;
+    width:500px;
+    height:400px;
     padding:0;
     margin:0;
     img{
+        height: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+    }
+    /* img{
         padding:0;
         margin:0;
-    }
+        width:100%;
+        height:auto;
+    } */
     ${screen.phoneS`
         width:100%`
     }
