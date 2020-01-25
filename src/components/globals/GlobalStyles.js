@@ -32,8 +32,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
-	letter-spacing:2px;
+	line-height: 1.6;
+	
 }
 ol, ul {
 	list-style: none;
@@ -57,7 +57,9 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+    color: #1f1f1f;
 }
 
 `

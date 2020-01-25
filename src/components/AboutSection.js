@@ -8,7 +8,7 @@ import { screen } from './globals/MediaQueries'
 import bitmoji from '../images/bitmoji.png'
 const AboutSection = () => {
     return(
-        <Wrapper id="About" title="About" direction="column" midHeight align="center" lineBreak>
+        <MainWrapper id="About" title="About" direction="column" midHeight align="center" lineBreak>
            <AboutWrapper>
                 <Image>
                     <img src={bitmoji} alt="bitmoji" width="50%"/>
@@ -22,11 +22,18 @@ const AboutSection = () => {
                     </Icons>
                 </View>
             </AboutWrapper>
-        </Wrapper>
+        </MainWrapper>
     )
 }
+const MainWrapper = styled(Wrapper)`
+    display:flex;
+    justify-content:center;
+    /* border:2px solid purple; */
+`
 const AboutWrapper = styled.div`
     display:flex;
+    width:80%;
+    /* border:2px solid pink; */
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
@@ -73,13 +80,15 @@ const View = styled.div`
     width:100%;
     flex-direction: column;
     justify-content:center;
+    /* border:3px solid blue; */
     p{
-        margin:5% 0 5% 0;
+        margin:5% 0;
+        text-align:center;
     }
-    ${screen.phoneS`width:100%`}
-    ${screen.phoneM`width:100%`}
-    ${screen.phoneL`width:100%`}
-    ${screen.Tablet`width:100%`}
+    ${screen.phoneS`width:80%`}
+    ${screen.phoneM`width:80%`}
+    ${screen.phoneL`width:80%`}
+    ${screen.Tablet`width:80%`}
 `
 const Icons = styled.div`
     display:flex;

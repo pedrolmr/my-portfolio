@@ -10,15 +10,18 @@ const Card = (props) => {
         <CardSection>
             <ProjectCard>
                 <Image className={props.isOdd ? styles.isOdd : null}>
-    {/*<img src={props.card.image} alt="project-pic" width={props.index === 2 ? '80%' : '50%'}/>*/}
-                    <img src={props.card.image} alt="project-pic"/>
+                    <img 
+                        src={props.card.image} 
+                        alt="project-pic" 
+                        width="100%"
+                    />
                 </Image>
                 <View>
                     <span>{props.card.title}</span>
                     <p>{props.card.description}</p>
                     <Tech>
                         <span>TECH:</span>
-                        <p style={{fontWeight: 'bold'}}>
+                        <p>
                             {props.card.tech.slice(0, -1).join(' , ') + ', ' + props.card.tech.slice(-1)}
                         </p>
                     </Tech>
@@ -43,8 +46,8 @@ const Image = styled.div`
     display:flex;
     justify-content:space-around;
     align-items:center;
-    width:500px;
-    height:400px;
+    width:45%;
+    height:auto;
     padding:0;
     margin:0;
     img{
@@ -76,8 +79,11 @@ const Image = styled.div`
 const ProjectCard = styled.div`
     display:flex;
     height:100%;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
+
+    /* border:2px solid purple; */
+
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
@@ -109,10 +115,13 @@ const ProjectCard = styled.div`
 `
 const View = styled.div`
     display:flex;
-    padding:5%;
-    width:50%;
+    /* padding:5% 0; */
+    width:45%;
     flex-direction: column;
     justify-content:center;
+    text-align:center;
+    /* border:2px solid black; */
+    
     span{
         font-size:1.2rem;
         font-weight:bold;
@@ -161,7 +170,7 @@ const Tech = styled.div`
     border-width: 1px;
     display:flex;
     flex-direction:column;
-    margin: 5px 0;
+    margin: 5% 0;
     span{
         border-top-left-radius:5px;
         border-top-right-radius:5px;

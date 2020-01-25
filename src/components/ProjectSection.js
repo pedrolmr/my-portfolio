@@ -4,6 +4,8 @@ import Card from './Card';
 import Wrapper from './Wrapper';
 import data from '../data';
 
+import styled from 'styled-components';
+
 const initialData = data;
 const ProjectSection = () => {
     const [data, setData] = useState([]);
@@ -13,11 +15,17 @@ const ProjectSection = () => {
     }, [data]);
 
     return (
-        <Wrapper id="ProjectSection" title="Projects" lineBreak>
+        <MainWrapper id="ProjectSection" title="Projects" lineBreak>
             {data.map((card, i) => <Card isOdd={i % 2} card={card} index={i}/>)}
-        </Wrapper>
+        </MainWrapper>
     )
 
 }
+
+const MainWrapper = styled(Wrapper)`
+    display:flex;
+    flex-direction:column;
+    width:80%;
+`
 
 export default ProjectSection;

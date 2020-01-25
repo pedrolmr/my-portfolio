@@ -36,21 +36,25 @@ const TopHeaderDiv = styled.div`
     align-items:center;
     justify-content:center;
     align-self:center;
+    color:#fff;
     ${screen.phoneS`font-size:1rem;`}
     a{
         color:#fff;
         margin-top:5vh;
+        cursor: pointer;
         ${screen.phoneS`
             margin-top:0vh;
             font-size:0.5rem;
             `
         }
     }
-    color:#fff;
     
     h1{
         font-size:3rem;
         ${screen.phoneS`font-size:1.5rem`}
+    }
+    p{
+        text-transform:uppercase;
     }
 `
 
