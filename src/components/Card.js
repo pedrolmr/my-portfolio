@@ -8,7 +8,7 @@ import { Button } from './Buttons';
 const Card = (props) => {
     return(
         <CardSection>
-            <ProjectCard>
+            <ProjectCard isOdd={props.isOdd}>
                 <Image className={props.isOdd ? styles.isOdd : null}>
                     <img 
                         src={props.card.image} 
@@ -81,9 +81,7 @@ const ProjectCard = styled.div`
     height:100%;
     justify-content:space-between;
     align-items:center;
-
-    /* border:2px solid purple; */
-
+    margin: ${props => props.isOdd ? "80px 0" : null};
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
