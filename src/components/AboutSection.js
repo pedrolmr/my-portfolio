@@ -38,26 +38,26 @@ const AboutWrapper = styled.div`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         text-align:center;`
     }
      ${screen.phoneM`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         text-align:center;`}
     ${screen.phoneL`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         text-align:center;`}
     ${screen.Tablet`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         text-align:center;`}
 
 `

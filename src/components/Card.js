@@ -18,7 +18,12 @@ const Card = (props) => {
                 </Image>
                 <View>
                     <span>{props.card.title}</span>
-                    <p>{props.card.description}</p>
+                    <p>{props.card.purpose}</p>
+                    <Desc>
+                        {props.card.description.map(d => (
+                            <p>- {d}</p>
+                        ))}
+                    </Desc>
                     <Tech>
                         <span>TECH:</span>
                         <p>
@@ -86,28 +91,28 @@ const ProjectCard = styled.div`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         padding:4% 0;`
     }
      ${screen.phoneM`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         padding:4% 0;`
     }
     ${screen.phoneL`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         padding:4% 0;`
     }
     ${screen.Tablet`
         flex-direction:column;
         align-items:center;
         width:100%;
-        font-size:0.8rem;
+        font-size:0.9rem;
         padding:4% 0;`
     }
 `
@@ -117,7 +122,7 @@ const View = styled.div`
     width:45%;
     flex-direction: column;
     justify-content:center;
-    text-align:center;
+    /* text-align:center; */
     /* border:2px solid black; */
     
     span{
@@ -159,6 +164,13 @@ const View = styled.div`
             font-size:1.5rem;
             text-align:center;
         }`
+    }
+`
+const Desc = styled.div`
+
+    p{
+        margin:0;
+        font-size:0.9rem;
     }
 `
 const Tech = styled.div`
