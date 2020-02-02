@@ -15,7 +15,7 @@ const data = [
         image: connect_our_kids,
         title: 'Connect Our Kids',
         purpose: 'Connect Our Kids is an App built with React Native to help kids in foster homes find families. This tool will help social workers quickly place foster kids into permanent homes',
-        description: ['Executed in 7 weeks with a team of 6 developers', 'Auth0 used for Authentication and tokens', 'Personally focused on warning messages, input validation and helped on Auth0 set up', 'Used the People Search API that\'s built on the Pipl API'],
+        description: ['Executed in 7 weeks with a team of 6 developers', 'Auth0 used for Authentication and tokens', 'Personally focused on warning messages, input validation and helped set up Auth0', 'Used the People Search API that\'s built on the Pipl API'],
         url: 'https://www.connectourkids.org/',
         github: 'https://github.com/labs13-connect-kids/mobile',
         tech: ['React Native', 'Native Base', 'Redux', 'Auth0']

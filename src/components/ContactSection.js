@@ -97,7 +97,6 @@ const Contact = styled(Wrapper)`
 `
 const ContactContainer = styled.div`
     width:100%;
-    /* justify-content: space-between; */
     ${screen.Tablet`
         width:100%;`
     }

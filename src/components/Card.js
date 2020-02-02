@@ -61,12 +61,6 @@ const Image = styled.div`
         display: block;
         margin: auto;
     }
-    /* img{
-        padding:0;
-        margin:0;
-        width:100%;
-        height:auto;
-    } */
     ${screen.phoneS`
         width:100%`
     }
@@ -118,12 +112,9 @@ const ProjectCard = styled.div`
 `
 const View = styled.div`
     display:flex;
-    /* padding:5% 0; */
     width:45%;
     flex-direction: column;
     justify-content:center;
-    /* text-align:center; */
-    /* border:2px solid black; */
     
     span{
         font-size:1.2rem;

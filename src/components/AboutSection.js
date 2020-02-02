@@ -28,12 +28,10 @@ const AboutSection = () => {
 const MainWrapper = styled(Wrapper)`
     display:flex;
     justify-content:center;
-    /* border:2px solid purple; */
 `
 const AboutWrapper = styled.div`
     display:flex;
     width:80%;
-    /* border:2px solid pink; */
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
@@ -80,7 +78,6 @@ const View = styled.div`
     width:100%;
     flex-direction: column;
     justify-content:center;
-    /* border:3px solid blue; */
     p{
         margin:5% 0;
         text-align:center;
