@@ -161,7 +161,7 @@ const Desc = styled.div`
 
     p{
         margin:0;
-        font-size:0.9rem;
+        /* font-size:0.9rem; */
     }
 `
 const Tech = styled.div`
