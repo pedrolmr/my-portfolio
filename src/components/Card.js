@@ -53,6 +53,12 @@ const Card = props => {
           </ProjectButtons>
         </View>
       </ProjectCard>
+
+      <Switch>
+        <Route exact path='/:project'>
+          <ProjectPage />
+        </Route>
+      </Switch>
     </CardSection>
   );
 };

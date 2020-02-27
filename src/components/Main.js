@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { Switch, Route } from 'react-router-dom';
-
 import Navigation from './Navigation';
 import TopHeader from './TopHeader';
 import AboutSection from './AboutSection';
@@ -10,9 +8,18 @@ import ProjectSection from './ProjectSection';
 import ContactSection from './ContactSection';
 import ProjectPage from './ProjectPage';
 
+import { useRouteMatch, Route } from 'react-router-dom';
+
 const Main = () => {
-  return (
-    <>
+  const match = useRouteMatch('/:project');
+  console.log('Match in Main.js', match);
+  return match ? (
+    <div>
+      <Navigation />
+      <ProjectPage />
+    </div>
+  ) : (
+    <div>
       <Navigation />
       <TopHeader />
       <BodyContainer>
@@ -23,7 +30,7 @@ const Main = () => {
       <Footer>
         <p>&copy;Pedro Montesinos 2020</p>
       </Footer>
-    </>
+    </div>
   );
 };
 const BodyContainer = styled.div`
