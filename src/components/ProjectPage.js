@@ -115,13 +115,17 @@ const Image = styled.div`
   padding: 0;
   margin: 20px 0;
   ${screen.phoneS`
-      width:100%;`}
+      width:100%;
+      height:auto`}
   ${screen.phoneM`
-      width:100%;`}
+      width:100%;
+      height:auto`}
   ${screen.phoneL`
-      width:100%;`}
+      width:100%;
+      height:auto`}
   ${screen.Tablet`
-      width:100%;`}
+      width:100%;
+      height:auto`}
   img {
     width: 50%;
     height: auto;
