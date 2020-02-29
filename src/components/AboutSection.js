@@ -22,10 +22,10 @@ const AboutSection = () => {
         </Image>
         <View>
           <p>
-            I'm a software developer with a passion for web development. My
-            primary focus is JavaScript but I've worked with multiple
-            programming languages including Python and C. You can take a look at
-            the Projects section to see my work.
+            Software Developer with a passion for web development. My primary
+            focus is JavaScript but I've worked with other programming languages
+            like Python and C. Able to design and develop beautiful UIs and REST
+            APIs. You can take a look at the Projects section to see my work.
           </p>
           <Icons>
             <a href='mailto:moverapedro@gmail.com'>

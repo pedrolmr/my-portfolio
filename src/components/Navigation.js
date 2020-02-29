@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation, useHistory } from 'react-router-dom';
+
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
 
@@ -6,6 +8,16 @@ import { screen } from './globals/MediaQueries';
 
 const Navigation = () => {
   const [navColor, setNavColor] = useState('');
+
+  let location = useLocation();
+  console.log('Location in Navigation', location);
+
+  let history = useHistory();
+  console.log('History in navigation', history);
+
+  const redirect = () => {
+    history.push('/');
+  };
 
   useEffect(() => {
     window.addEventListener('scroll', NavChangeColor);
@@ -22,52 +34,73 @@ const Navigation = () => {
     }
   };
 
-  return (
-    <div>
-      <NavBar color={navColor}>
-        <Link
-          activeClass='active'
-          to='TopHeader'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={200}
-        >
-          HOME
-        </Link>
-        <Link
-          activeClass='active'
-          to='About'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={200}
-        >
-          ABOUT
-        </Link>
-        <Link
-          activeClass='active'
-          to='ProjectSection'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={200}
-        >
-          PROJECTS
-        </Link>
-        <Link
-          activeClass='active'
-          to='Contact'
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={200}
-        >
-          CONTACT
-        </Link>
-      </NavBar>
-    </div>
-  );
+  if (location.pathname !== '/') {
+    return (
+      <div>
+        <NavBar color='#516395'>
+          <a onClick={redirect} href='#TopHeader'>
+            HOME
+          </a>
+          <a onClick={redirect} href='#About'>
+            ABOUT
+          </a>
+          <a onClick={redirect} href='#ProjectSection'>
+            PROJECTS
+          </a>
+          <a onClick={redirect} href='#Contact'>
+            CONTACT
+          </a>
+        </NavBar>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        <NavBar color={navColor}>
+          <Link
+            activeClass='active'
+            to='TopHeader'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+          >
+            HOME
+          </Link>
+          <Link
+            activeClass='active'
+            to='About'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+          >
+            ABOUT
+          </Link>
+          <Link
+            activeClass='active'
+            to='ProjectSection'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+          >
+            PROJECTS
+          </Link>
+          <Link
+            activeClass='active'
+            to='Contact'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={200}
+          >
+            CONTACT
+          </Link>
+        </NavBar>
+      </div>
+    );
+  }
 };
 
 const NavBar = styled.nav`
