@@ -9,7 +9,6 @@ import ProjectPage from './components/ProjectPage';
 import Navigation from './components/Navigation';
 
 import data from './data';
-
 const initialData = data;
 
 const App = () => {

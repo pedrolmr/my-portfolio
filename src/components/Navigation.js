@@ -9,8 +9,8 @@ import { screen } from './globals/MediaQueries';
 const Navigation = () => {
   const [navColor, setNavColor] = useState('');
 
-  let location = useLocation();
-  let history = useHistory();
+  const location = useLocation();
+  const history = useHistory();
 
   useEffect(() => {
     window.addEventListener('scroll', NavChangeColor);
