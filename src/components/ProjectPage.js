@@ -130,16 +130,16 @@ const Image = styled.div`
     width: 50%;
     height: auto;
     ${screen.phoneS`
-      width:100%
+      width:50%
       height:auto;`}
     ${screen.phoneM`
-      width:100%
+      width:50%
       height:auto;`}
     ${screen.phoneL`
-      width:100%
+      width:50%
       height:auto;`}
     ${screen.Tablet`
-      width:100%
+      width:50%
       height:auto;`}
   }
 `;
