@@ -143,6 +143,7 @@ const Image = styled.div`
       height:50%;`}
   }
 `;
+//images look good
 
 const Desc = styled.div`
   margin-top: 20px;
