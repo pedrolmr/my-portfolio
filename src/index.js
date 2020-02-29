@@ -11,9 +11,17 @@ import {
   faCheckSquare,
   faCoffee,
   faEnvelopeSquare,
-  faAngleDoubleDown
+  faAngleDoubleDown,
+  faArrowLeft
 } from '@fortawesome/free-solid-svg-icons';
-library.add(fab, faCheckSquare, faCoffee, faEnvelopeSquare, faAngleDoubleDown);
+library.add(
+  fab,
+  faCheckSquare,
+  faCoffee,
+  faEnvelopeSquare,
+  faAngleDoubleDown,
+  faArrowLeft
+);
 
 ReactDOM.render(
   <Router>

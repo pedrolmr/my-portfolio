@@ -6,8 +6,6 @@ import styles from '../App.css';
 import { screen } from './globals/MediaQueries';
 import { Button } from './Buttons';
 
-import ProjectPage from './ProjectPage';
-
 const Card = props => {
   return (
     <CardSection>
@@ -18,14 +16,8 @@ const Card = props => {
         <View>
           <span>{props.card.title}</span>
           <p>{props.card.purpose}</p>
-          {/*<Desc>
-            {props.card.description.map(d => (
-              <p>- {d}</p>
-            ))}
-            </Desc>*/}
-          <Link exact to={`/${props.card.title}`}>
-            Learn more...
-          </Link>
+
+          <Link to={`/${props.card.title}`}>Learn more...</Link>
 
           <Tech>
             <span>TECH:</span>
@@ -53,12 +45,6 @@ const Card = props => {
           </ProjectButtons>
         </View>
       </ProjectCard>
-
-      <Switch>
-        <Route exact path='/:project'>
-          <ProjectPage />
-        </Route>
-      </Switch>
     </CardSection>
   );
 };
