@@ -1,19 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import Card from './Card';
 import Wrapper from './Wrapper';
-import data from '../data';
 
 import styled from 'styled-components';
 
-const initialData = data;
 const ProjectSection = ({ data }) => {
-  // const [data, setData] = useState([]);
-
-  // useEffect(() => {
-  //   setData(initialData);
-  // }, [data]);
-
   return (
     <MainWrapper id='ProjectSection' title='Projects' lineBreak>
       {data.map((card, i) => (

@@ -10,10 +10,7 @@ const Navigation = () => {
   const [navColor, setNavColor] = useState('');
 
   let location = useLocation();
-  console.log('Location in Navigation', location);
-
   let history = useHistory();
-  console.log('History in navigation', history);
 
   useEffect(() => {
     window.addEventListener('scroll', NavChangeColor);

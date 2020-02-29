@@ -12,17 +12,11 @@ const ProjectPage = props => {
     window.scrollTo(0, 0);
   }, []);
 
-  console.log('props in ProjectPage', props.data);
-
   const { project } = useParams();
-  console.log('Params in ProjectPage.js', project);
-
   let history = useHistory();
-  console.log('history', history);
 
   if (props.data.length > 0) {
     let projectData = props.data.find((p, i) => p.title === project);
-    console.log('projectData in ProjectPage', projectData);
 
     return (
       <Page>
@@ -90,7 +84,6 @@ const Container = styled.div`
   width: 60%;
   padding: 10px;
   margin: 40px 0;
-  /* border: 5px solid red; */
   ${screen.phoneS`
       width:100%`}
   ${screen.phoneM`
@@ -100,7 +93,6 @@ const Container = styled.div`
   ${screen.Tablet`
       width:100%`}
   h1 {
-    /* border: 5px solid pink; */
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
@@ -118,7 +110,6 @@ const Container = styled.div`
 const Image = styled.div`
   display: flex;
   justify-content: center;
-  /* border: 4px solid orange; */
   width: 100%;
   height: 100%;
   padding: 0;
@@ -147,10 +138,8 @@ const Image = styled.div`
 
 const Desc = styled.div`
   margin-top: 20px;
-  /* border: 1px solid black; */
   div {
     display: flex;
-    /* border: 1px solid orange; */
     ${screen.phoneS`
       margin-bottom: 10px;`}
     ${screen.phoneM`
@@ -161,9 +150,7 @@ const Desc = styled.div`
       margin-bottom: 10px;`}
     margin-bottom: 10px;
     span {
-      /* border: 1px solid black; */
       padding: 0 10px 0 0;
-      /* display: inline-block;  */
     }
   }
 `;
