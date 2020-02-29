@@ -15,10 +15,6 @@ const Navigation = () => {
   let history = useHistory();
   console.log('History in navigation', history);
 
-  const redirect = () => {
-    history.push('/');
-  };
-
   useEffect(() => {
     window.addEventListener('scroll', NavChangeColor);
   }, []);
@@ -32,6 +28,10 @@ const Navigation = () => {
       setNavColor('#516395');
       setNavColor('');
     }
+  };
+
+  const redirect = () => {
+    history.push('/');
   };
 
   if (location.pathname !== '/') {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
 
 import styled from 'styled-components';
@@ -8,6 +8,10 @@ import { screen } from './globals/MediaQueries';
 import { Button } from './Buttons';
 
 const ProjectPage = props => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   console.log('props in ProjectPage', props.data);
 
   const { project } = useParams();
