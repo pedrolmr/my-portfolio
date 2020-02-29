@@ -8,12 +8,12 @@ import { screen } from './globals/MediaQueries';
 import { Button } from './Buttons';
 
 const ProjectPage = props => {
+  const { project } = useParams();
+  const history = useHistory();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const { project } = useParams();
-  let history = useHistory();
 
   if (props.data.length > 0) {
     let projectData = props.data.find((p, i) => p.title === project);
