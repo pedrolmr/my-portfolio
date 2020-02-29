@@ -130,17 +130,17 @@ const Image = styled.div`
     width: 50%;
     height: auto;
     ${screen.phoneS`
-      width:50%
-      height:auto;`}
+      width:100%
+      height:50%;`}
     ${screen.phoneM`
-      width:50%
-      height:auto;`}
+      width:100%
+      height:50%;`}
     ${screen.phoneL`
-      width:50%
-      height:auto;`}
+      width:100%
+      height:50%;`}
     ${screen.Tablet`
-      width:50%
-      height:auto;`}
+      width:100%
+      height:50%;`}
   }
 `;
 
