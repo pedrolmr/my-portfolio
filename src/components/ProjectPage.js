@@ -129,14 +129,18 @@ const Image = styled.div`
   img {
     width: 50%;
     height: auto;
-    /* ${screen.phoneS`
-      width:100%`}
+    ${screen.phoneS`
+      width:100%
+      height:auto;`}
     ${screen.phoneM`
-      width:100%`}
+      width:100%
+      height:auto;`}
     ${screen.phoneL`
-      width:100%`}
+      width:100%
+      height:auto;`}
     ${screen.Tablet`
-      width:100%`} */
+      width:100%
+      height:auto;`}
   }
 `;
 
