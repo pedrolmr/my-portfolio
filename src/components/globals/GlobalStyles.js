@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const Global = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -57,10 +57,12 @@ table {
 
 html, body {
     height: 100%;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
 	font-weight: 400;
+	font-size:16px;
+	line-height:26px;
     color: #1f1f1f;
 }
 
-`
+`;
 export default Global;
