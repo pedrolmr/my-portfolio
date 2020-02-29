@@ -39,10 +39,10 @@ const ProjectPage = props => {
 
           <Desc>
             {projectData.description.map((d, i) => (
-              <p key={i}>
+              <div>
                 <span>-</span>
-                {d}
-              </p>
+                <p key={i}>{d}</p>
+              </div>
             ))}
           </Desc>
 
@@ -90,12 +90,28 @@ const Container = styled.div`
   width: 60%;
   padding: 10px;
   margin: 40px 0;
-  /* line-height: 26px; */
+  /* border: 5px solid red; */
+  ${screen.phoneS`
+      width:100%`}
+  ${screen.phoneM`
+      width:100%`}
+  ${screen.phoneL`
+      width:100%`}
+  ${screen.Tablet`
+      width:100%`}
   h1 {
     /* border: 5px solid pink; */
     text-align: center;
     font-weight: bold;
     font-size: 3rem;
+    ${screen.phoneS`
+      font-size:2rem;`}
+    ${screen.phoneM`
+      font-size:2rem;`}
+    ${screen.phoneL`
+      font-size:2rem;`}
+    ${screen.Tablet`
+      font-size:2rem;`}
   }
 `;
 
@@ -106,17 +122,49 @@ const Image = styled.div`
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0;
+  margin: 20px 0;
+  ${screen.phoneS`
+      width:100%;`}
+  ${screen.phoneM`
+      width:100%;`}
+  ${screen.phoneL`
+      width:100%;`}
+  ${screen.Tablet`
+      width:100%;`}
   img {
     width: 50%;
     height: auto;
+    ${screen.phoneS`
+      width:100%`}
+    ${screen.phoneM`
+      width:100%`}
+    ${screen.phoneL`
+      width:100%`}
+    ${screen.Tablet`
+      width:100%`}
   }
 `;
 
 const Desc = styled.div`
   margin-top: 20px;
-  p span {
-    padding: 0 10px 0 0;
+  /* border: 1px solid black; */
+  div {
+    display: flex;
+    /* border: 1px solid orange; */
+    ${screen.phoneS`
+      margin-bottom: 10px;`}
+    ${screen.phoneM`
+      margin-bottom: 10px;`}
+    ${screen.phoneL`
+      margin-bottom: 10px;`}
+    ${screen.Tablet`
+      margin-bottom: 10px;`}
+    margin-bottom: 10px;
+    span {
+      /* border: 1px solid black; */
+      padding: 0 10px 0 0;
+      /* display: inline-block;  */
+    }
   }
 `;
 const Tech = styled.div`
