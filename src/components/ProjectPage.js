@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,6 +13,9 @@ const ProjectPage = props => {
   const { project } = useParams();
   console.log('Params in ProjectPage.js', project);
 
+  let history = useHistory();
+  console.log('history', history);
+
   if (props.data.length > 0) {
     let projectData = props.data.find((p, i) => p.title === project);
     console.log('projectData in ProjectPage', projectData);
@@ -20,7 +23,7 @@ const ProjectPage = props => {
     return (
       <Page>
         <Container>
-          <a>
+          <a onClick={() => history.goBack()} style={{ cursor: 'pointer' }}>
             <FontAwesomeIcon icon='arrow-left' fixedWidth size='2x' />
           </a>
           <h1>{projectData.title}</h1>
