@@ -21,9 +21,9 @@ const ProjectPage = props => {
     return (
       <Page>
         <Container>
-          <a onClick={() => history.goBack()} style={{ cursor: 'pointer' }}>
+          <span onClick={() => history.goBack()} style={{ cursor: 'pointer' }}>
             <FontAwesomeIcon icon='arrow-left' fixedWidth size='2x' />
-          </a>
+          </span>
           <h1>{projectData.title}</h1>
           <Image>
             <img src={projectData.image} />
