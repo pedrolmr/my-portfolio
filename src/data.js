@@ -13,7 +13,7 @@ const data = [
       'Used Rrule JS library to be able to create recurrent events',
       'Moment.js was used to display dates and times in the events',
       'Worked with the Full Calendar API to display the calendar',
-      "Google calendar API was used to push events to a user's google calendar"
+      "Google calendar API was used to push events to a user's google calendar",
     ],
     url: 'https://maramataka.com/',
     github: 'https://github.com/Lambda-School-Labs/school-calendar-fe/',
@@ -26,8 +26,9 @@ const data = [
       'Full Calendar API',
       'Rrule.js',
       'Moment.js',
-      'Google calendar API'
-    ]
+      'Google calendar API',
+    ],
+    categories: ['front-end', 'back-end'],
   },
   {
     image: connect_our_kids,
@@ -38,11 +39,12 @@ const data = [
       'Executed in 7 weeks with a team of 6 developers',
       'Auth0 used for Authentication and tokens',
       'Personally focused on warning messages, input validation and helped set up Auth0',
-      "Used the People Search API that's built on the Pipl API"
+      "Used the People Search API that's built on the Pipl API",
     ],
     url: 'https://www.connectourkids.org/',
     github: 'https://github.com/labs13-connect-kids/mobile',
-    tech: ['React Native', 'Native Base', 'Redux', 'Auth0']
+    tech: ['React Native', 'Native Base', 'Redux', 'Auth0'],
+    categories: ['front-end', 'back-end'],
   },
   {
     image: post,
@@ -53,11 +55,12 @@ const data = [
       'Executed in 2 weeks working on it part time',
       'Implemented CRUD operations',
       'Used React-router to implement routing functionality',
-      'Styled-components was used to style the app'
+      'Styled-components was used to style the app',
     ],
     url: 'https://nervous-bardeen-69bc6f.netlify.com/',
     github: 'https://github.com/pedrolmr/post',
-    tech: ['React', 'Styled components']
-  }
+    tech: ['React', 'Styled components'],
+    categories: ['front-end'],
+  },
 ];
 export default data;
