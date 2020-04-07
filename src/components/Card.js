@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Route, Switch, Link } from 'react-router-dom';
 
@@ -6,7 +6,7 @@ import styles from '../App.css';
 import { screen } from './globals/MediaQueries';
 import { Button } from './Buttons';
 
-const Card = props => {
+const Card = (props) => {
   return (
     <CardSection>
       <ProjectCard isOdd={props.isOdd}>
@@ -15,6 +15,30 @@ const Card = props => {
         </Image>
         <View>
           <span>{props.card.title}</span>
+
+          <Category>
+            {props.card.categories.map((i) => {
+              if (i === 'front-end') {
+                return (
+                  <div
+                    style={{ color: '#61dafb', border: '1px solid #61dafb' }}
+                  >
+                    {i}
+                  </div>
+                );
+              }
+              if (i === 'back-end') {
+                return (
+                  <div
+                    style={{ color: '#4de32b', border: '1px solid #4de32b' }}
+                  >
+                    {i}
+                  </div>
+                );
+              }
+            })}
+          </Category>
+
           <p>{props.card.purpose}</p>
 
           <Link to={`/${props.card.title}`}>Learn more...</Link>
@@ -82,7 +106,7 @@ const ProjectCard = styled.div`
     height:100%;
     justify-content:space-between;
     align-items:center;
-    margin: ${props => (props.isOdd ? '80px 0' : null)};
+    margin: ${(props) => (props.isOdd ? '80px 0' : null)};
     ${screen.phoneS`
         flex-direction:column;
         align-items:center;
@@ -150,6 +174,17 @@ const View = styled.div`
             font-size:1.5rem;
             text-align:center;
         }`}
+`;
+
+const Category = styled.div`
+  display: flex;
+  margin-top: 10px;
+  div {
+    border-radius: 5px;
+    font-size: 0.8rem;
+    padding: 0 0.2rem;
+    margin-right: 0.2rem;
+  }
 `;
 const Desc = styled.div`
   p {
