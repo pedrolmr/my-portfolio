@@ -3,34 +3,6 @@ import post from './images/post.png';
 import mataka from './images/mataka.png';
 const data = [
   {
-    image: mataka,
-    title: 'Mataka (School Calendar)',
-    purpose:
-      'School Calendar was an app idea from a high school basketball coach. He wanted to easily schedule game practices and other events.',
-    description: [
-      'Team Lead overseeing 6 Fullstack web developers and 2 UX designers',
-      'Helped deploy Frontend and add a domain to Netlify DNS',
-      'Used Rrule JS library to be able to create recurrent events',
-      'Moment.js was used to display dates and times in the events',
-      'Worked with the Full Calendar API to display the calendar',
-      "Google calendar API was used to push events to a user's google calendar",
-    ],
-    url: 'https://maramataka.com/',
-    github: 'https://github.com/Lambda-School-Labs/school-calendar-fe/',
-    tech: [
-      'React.js',
-      'Material-UI',
-      'Node.js',
-      'Express.js',
-      'Context API',
-      'Full Calendar API',
-      'Rrule.js',
-      'Moment.js',
-      'Google calendar API',
-    ],
-    categories: ['front-end', 'back-end'],
-  },
-  {
     image: connect_our_kids,
     title: 'Connect Our Kids',
     purpose:
